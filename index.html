@@ -1,0 +1,1570 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>RAINBOW TIME | 彩虹时光</title>
+	<link rel="stylesheet" href="css/base.css">
+	<link rel="stylesheet" href="css/index.css">
+	<script type="text/javascript" src="js/jquery-3.4.1.js"></script>
+	<script type="text/javascript" src="js/base.js"></script>
+	<script type="text/javascript" src="js/index.js"></script>
+</head>
+<body>
+	<!-- 头部开始 -->
+	<div class="header">
+    	<div class="header-box">
+    		<!-- user区 -->
+    		<ul class="user">
+	            <li class="login">
+	                <a href="login.html" target="_blank">登录</a>
+	                <div class="login-menu unlogin-menu">
+	                    <ul>
+	                        <li class="menu-uc"><span class="menu-icon"> </span><a href="/member/my" target="_blank">个人中心</a></li>
+	                        <li class="menu-fav"><span class="menu-icon"> </span><a href="/member/favourites" target="_blank">我的收藏</a></li>
+	                    </ul>
+	                </div>
+	            </li>
+	            <li class="m-line">|</li>
+	            <li class="register">
+	                <a href="register.html" target="_blank">注册</a>
+	            </li>
+	        </ul>
+	        <!-- service区 -->
+	        <ul class="service">
+	            <li class="exchange">
+	                <a id="select_currency" href="">参考汇率</a>
+						<ul class="exchange-menu">
+							<li id="tb-wish" class="tb-wish">
+								<span>1英镑=9人民币</span>
+								<span class="rate-help-anchor"></span>
+							</li>
+							<li id="rate-help-content" class="rate-help-content">
+								<b class="rate-help">RainbowTime 统一以英镑作为货币单位，站内所有人民价格及汇率仅供参考；顾客实际支付的金额以结算时支付机构的实时汇率为准。</b>
+							</li>
+						</ul>
+	            </li>
+	            <li id="kefu" class="kefu">
+	                <a href="" class="online-kf">在线客服</a>
+	            </li>
+	            <li class="shopping-cart">
+	                <a href="" target="_blank">购物车</a>
+	            </li>
+	            <li class="notification">
+	                <a href="" target="_blank">消费者告知书</a>
+	            </li>
+	        </ul>
+    	</div>
+    </div>
+	<!-- 头部结束 -->
+	
+    <!-- logo和搜索框开始 -->
+    <div class="logo-and-search">
+	    <div class="logo-inner">
+	        <a href="index.html" class="logo">
+	            <img width="320" alt="" src="image/logo.png">
+	        </a>
+	        <form class="search-wrap search-focus">
+	            <div class="clearfix cmp-dropdownsearch">
+	                <input id="q" name="q" placeholder="YSL圣罗兰" data-value="YSL圣罗兰" class="search-bg input-keywords" type="text" autocomplete="off">
+	                <button type="button" class="btn-search" sel-id="header-btn-searchkw">搜索</button>
+	            </div>
+	        </form>
+	    </div>
+	</div>
+	<!-- logo和搜索框结束 -->
+
+	<!-- 导航栏开始 -->
+	<div class="nav">
+        <div class="nav-inner">
+            <ul class="primary">
+                <li class="home hover active"><a href="index.html">INDEX/首页</a></li>
+                <li class="shop"><a href="shop.html">SHOP/购物</a></li>
+                <li class="news"><a href="news.html">NEWS/新品速递</a></li>
+				<li class="sale"><a href="sale.html">SALE/优惠专区</a></li>
+				<li class="sharing"><a href="sharing.html">SHARING/美物分享</a></li>
+            </ul>
+        </div>
+    </div>
+    <!-- 导航栏结束 -->
+    
+    <div class="main">
+    	<!-- banner开始 -->
+    	<div class="banner">
+	    	<div class="banner-silder">
+		        <li class="banner-img current"><img src="image/banner01.jpg" alt=""></li>
+		        <li class="banner-img"><img src="image/banner02.jpg" alt=""></li>
+		        <li class="banner-img"><img src="image/banner03.jpg" alt=""></li>
+		        <li class="banner-img"><img src="image/banner04.jpg" alt=""></li>
+		        <li class="banner-img"><img src="image/banner05.jpg" alt=""></li>
+
+		         <!-- 左右箭头的展示 -->
+	            <!-- <div class="lf"></div>
+	            <div class="lr"></div> -->
+	            <button class="banner-prev banner-arrow" aria-label="Previous" type="button" style="display: block;">Previous</button>
+	            <button class="banner-next banner-arrow" aria-label="Next" type="button" style="display: block;">Next</button>
+	            <!-- 小圆点展示 -->
+	            <div class="dots">
+	                <span class="square"></span>
+	                <span></span>
+	                <span></span>
+	                <span></span>
+	                <span></span>
+	            </div>
+	    	</div>
+	    </div>
+	    <!-- banner结束 -->
+		
+		<div class="index-column">
+		    <!-- 商品推荐开始 -->
+	    	<div class="product-recommend">
+		    	<strong class="title">商品推荐</strong>
+		    	<ul class="product-tabs" id="product-tabs">
+		    		<li class="tabs active"><a href="javascript:void(0)">超值推荐</a></li>
+		    		<li class="tabs"><a href="javascript:void(0)">夏日防晒</a></li>
+		    		<li class="tabs"><a href="javascript:void(0)">畅销爆款</a></li>
+		    		<li class="tabs"><a href="javascript:void(0)">新品抢先购</a></li>
+		    		<li class="tabs"><a href="javascript:void(0)">香港仓推荐</a></li>
+		    		<li class="tabs"><a href="javascript:void(0)">促销专区</a></li>
+		    	</ul>
+		    	<div class="product-list-box" id="product-list-box">
+			    	<div class="product-list clearfix">
+			    		<ul>
+			    			<li class="product-panel">
+			    				<a href="detail.html" class="product-view">
+			    					<img src="image/product/p01.jpg" alt="">
+			    					<span class="tag-first">2件93折</span>
+			    				</a>
+			    				<h2 class="product-desc">
+						            <a class="product-link" href="detail.html" target="_blank" title="【官方正品】YSL圣罗兰莹亮纯魅丰盈黑心唇膏 莹亮星钻唇膏">	
+						            	【官方正品】YSL圣罗兰莹亮纯魅丰盈黑心唇膏 莹亮星钻唇膏
+						            </a>
+						        </h2>
+						        <div class="price-wrapper">
+						            <span class="price clearfix">
+							            <span class="discount-amount"></span>
+							            ￥199
+						            </span>
+						            <span class="old-price"></span>
+					            </div>
+					            <div class="stock-addr">美国仓</div>
+			    			</li>
+			    			<li class="product-panel">
+			    				<a href="detail.html" class="product-view">
+			    					<img src="image/product/p02.jpg" alt="">
+			    					<span class="tag-first"></span>
+			    				</a>
+			    				<h2 class="product-desc">
+						            <a class="product-link" href="detail.html" target="_blank" title="资生堂ELIXIR /怡丽丝尔 优悦活颜净肤洗面奶 145g 清爽/滋润">
+						            	资生堂ELIXIR /怡丽丝尔 优悦活颜净肤洗面奶 145g 清爽/滋润
+						            </a>
+						        </h2>
+						        <div class="price-wrapper">
+						            <span class="price clearfix">
+							            <span class="discount-amount">80%OFF</span>
+							            ￥169
+						            </span>
+						            <span class="old-price">￥199</span>
+					            </div>
+					            <div class="stock-addr">日本仓</div>
+			    			</li>
+			    			<li class="product-panel">
+			    				<a href="detail.html" class="product-view">
+			    					<img src="image/product/p03.jpg" alt="">
+			    					<span class="tag-first"></span>
+			    				</a>
+			    				<h2 class="product-desc">
+						            <a class="product-link" href="detail.html" target="_blank" title="日本Shiseido资生堂完美意境粉底液霜奶油肌持久遮瑕提亮轻薄隔离">	
+						            	日本Shiseido资生堂完美意境粉底液霜奶油肌持久遮瑕提亮轻薄隔离
+						            </a>
+						        </h2>
+						        <div class="price-wrapper">
+						            <span class="price clearfix">
+							            <span class="discount-amount">80%OFF</span>
+							            ￥79
+						            </span>
+						            <span class="old-price">￥129</span>
+					            </div>
+					            <div class="stock-addr">日本仓</div>
+			    			</li>
+			    			<li class="product-panel">
+			    				<a href="detail.html" class="product-view">
+			    					<img src="image/product/p04.jpg" alt="">
+			    					<span class="tag-first">2件93折</span>
+			    				</a>
+			    				<h2 class="product-desc">
+						            <a class="product-link" href="detail.html" target="_blank" title="Physicians Formula pf健康粉底液油皮持久养肤遮瑕24小时奶油肌">
+						            	Physicians Formula pf健康粉底液油皮持久养肤遮瑕24小时奶油肌
+						            </a>
+						        </h2>
+						        <div class="price-wrapper">
+						            <span class="price clearfix">
+							            <span class="discount-amount"></span>
+							            ￥159
+						            </span>
+						            <span class="old-price"></span>
+					            </div>
+					            <div class="stock-addr">英国仓</div>
+			    			</li>
+			    			<li class="product-panel">
+			    				<a href="detail.html" class="product-view">
+			    					<img src="image/product/p05.jpg" alt="">
+			    					<span class="tag-first"></span>
+			    				</a>
+			    				<h2 class="product-desc">
+						            <a class="product-link" href="detail.html" target="_blank" title="美国Revlon露华浓进口粉底液持久无暇水润不脱色美白粉底110#150#">
+						            	美国Revlon露华浓进口粉底液持久无暇水润不脱色美白粉底110#150#
+						            </a>
+						        </h2>
+						        <div class="price-wrapper">
+						            <span class="price clearfix">
+							            <span class="discount-amount">80%OFF</span>
+							            ￥49
+						            </span>
+						            <span class="old-price">￥69</span>
+					            </div>
+					            <div class="stock-addr">美国仓</div>
+			    			</li>
+			    			<li class="product-panel">
+			    				<a href="detail.html" class="product-view">
+			    					<img src="image/product/p06.jpg" alt="">
+			    					<span class="tag-first"></span>
+			    				</a>
+			    				<h2 class="product-desc">
+						            <a class="product-link" href="detail.html" target="_blank" title="Embryolisse进口保湿隔离妆前乳法国大宝妆前打底隔离霜75ml">
+						            	Embryolisse进口保湿隔离妆前乳法国大宝妆前打底隔离霜75ml
+						            </a>
+						        </h2>
+						        <div class="price-wrapper">
+						            <span class="price clearfix">
+							            <span class="discount-amount">50%OFF</span>
+							            ￥59
+						            </span>
+						            <span class="old-price">￥129</span>
+					            </div>
+					            <div class="stock-addr">法国仓</div>
+			    			</li>
+			    			<li class="product-panel">
+			    				<a href="detail.html" class="product-view">
+			    					<img src="image/product/p07.jpg" alt="">
+			    					<span class="tag-first">买三免一</span>
+			    				</a>
+			    				<h2 class="product-desc">
+						            <a class="product-link" href="detail.html" target="_blank" title="美国RCMA无色透明定妆粉散粉蜜粉底胡椒粉持久定妆防水控油90ml">
+						            	美国RCMA无色透明定妆粉散粉蜜粉底胡椒粉持久定妆防水控油90ml
+						            </a>
+						        </h2>
+						        <div class="price-wrapper">
+						            <span class="price clearfix">
+							            <span class="discount-amount"></span>
+							            ￥99
+						            </span>
+						            <span class="old-price"></span>
+					            </div>
+					            <div class="stock-addr">美国仓</div>
+			    			</li>
+			    			<li class="product-panel">
+			    				<a href="detail.html" class="product-view">
+			    					<img src="image/product/p08.jpg" alt="">
+			    					<span class="tag-first"></span>
+			    				</a>
+			    				<h2 class="product-desc">
+						            <a class="product-link" href="detail.html" target="_blank" title="日本SOFINA苏菲娜进口瓷效妆前乳隔离霜女保湿干爽/水润 防晒隔离">
+						            	日本SOFINA苏菲娜进口瓷效妆前乳隔离霜女保湿干爽/水润 防晒隔离
+						            </a>
+						        </h2>
+						        <div class="price-wrapper">
+						            <span class="price clearfix">
+							            <span class="discount-amount">80%OFF</span>
+							            ￥89
+						            </span>
+						            <span class="old-price">￥129</span>
+					            </div>
+					            <div class="stock-addr">日本仓</div>
+			    			</li>
+			    			<li class="product-panel">
+			    				<a href="detail.html" class="product-view">
+			    					<img src="image/product/p09.jpg" alt="">
+			    					<span class="tag-first"></span>
+			    				</a>
+			    				<h2 class="product-desc">
+						            <a class="product-link" href="detail.html" target="_blank" title="法国Bourjois妙巴黎果疗美肌精华啫喱粉底液保湿遮瑕持久控油30ml">
+						            	法国Bourjois妙巴黎果疗美肌精华啫喱粉底液保湿遮瑕持久控油30ml
+						            </a>
+						        </h2>
+						        <div class="price-wrapper">
+						            <span class="price clearfix">
+							            <span class="discount-amount"></span>
+							            ￥129
+						            </span>
+						            <span class="old-price"></span>
+					            </div>
+					            <div class="stock-addr">法国仓</div>
+			    			</li>
+			    			<li class="product-panel">
+			    				<a href="detail.html" class="product-view">
+			    					<img src="image/product/p10.jpg" alt="">
+			    					<span class="tag-first"></span>
+			    				</a>
+			    				<h2 class="product-desc">
+						            <a class="product-link" href="detail.html" target="_blank" title="INTEGRATE资生堂完美意境保湿遮瑕气垫粉底液0#明亮色持久不脱妆">
+						            	INTEGRATE资生堂完美意境保湿遮瑕气垫粉底液0#明亮色持久不脱妆
+						            </a>
+						        </h2>
+						        <div class="price-wrapper">
+						            <span class="price clearfix">
+							            <span class="discount-amount">80%OFF</span>
+							            ￥149
+						            </span>
+						            <span class="old-price">￥199</span>
+					            </div>
+					            <div class="stock-addr">日本仓</div>
+			    			</li>
+			    		</ul>
+			    	</div>
+			    	<div class="product-list clearfix">
+			    		<ul>
+			    			<li class="product-panel">
+			    				<a href="detail.html" class="product-view">
+			    					<img src="image/product/p02.jpg" alt="">
+			    					<span class="tag-first"></span>
+			    				</a>
+			    				<h2 class="product-desc">
+						            <a class="product-link" href="detail.html" target="_blank" title="资生堂ELIXIR /怡丽丝尔 优悦活颜净肤洗面奶 145g 清爽/滋润">
+						            	资生堂ELIXIR /怡丽丝尔 优悦活颜净肤洗面奶 145g 清爽/滋润
+						            </a>
+						        </h2>
+						        <div class="price-wrapper">
+						            <span class="price clearfix">
+							            <span class="discount-amount">80%OFF</span>
+							            ￥169
+						            </span>
+						            <span class="old-price">￥199</span>
+					            </div>
+					            <div class="stock-addr">日本仓</div>
+			    			</li>
+			    			<li class="product-panel">
+			    				<a href="detail.html" class="product-view">
+			    					<img src="image/product/p01.jpg" alt="">
+			    					<span class="tag-first">2件93折</span>
+			    				</a>
+			    				<h2 class="product-desc">
+						            <a class="product-link" href="detail.html" target="_blank" title="【官方正品】YSL圣罗兰莹亮纯魅丰盈黑心唇膏 莹亮星钻唇膏">	
+						            	【官方正品】YSL圣罗兰莹亮纯魅丰盈黑心唇膏 莹亮星钻唇膏
+						            </a>
+						        </h2>
+						        <div class="price-wrapper">
+						            <span class="price clearfix">
+							            <span class="discount-amount"></span>
+							            ￥199
+						            </span>
+						            <span class="old-price"></span>
+					            </div>
+					            <div class="stock-addr">美国仓</div>
+			    			</li>
+			    			<li class="product-panel">
+			    				<a href="detail.html" class="product-view">
+			    					<img src="image/product/p03.jpg" alt="">
+			    					<span class="tag-first"></span>
+			    				</a>
+			    				<h2 class="product-desc">
+						            <a class="product-link" href="detail.html" target="_blank" title="日本Shiseido资生堂完美意境粉底液霜奶油肌持久遮瑕提亮轻薄隔离">	
+						            	日本Shiseido资生堂完美意境粉底液霜奶油肌持久遮瑕提亮轻薄隔离
+						            </a>
+						        </h2>
+						        <div class="price-wrapper">
+						            <span class="price clearfix">
+							            <span class="discount-amount">80%OFF</span>
+							            ￥79
+						            </span>
+						            <span class="old-price">￥129</span>
+					            </div>
+					            <div class="stock-addr">日本仓</div>
+			    			</li>
+			    			<li class="product-panel">
+			    				<a href="detail.html" class="product-view">
+			    					<img src="image/product/p04.jpg" alt="">
+			    					<span class="tag-first">2件93折</span>
+			    				</a>
+			    				<h2 class="product-desc">
+						            <a class="product-link" href="detail.html" target="_blank" title="Physicians Formula pf健康粉底液油皮持久养肤遮瑕24小时奶油肌">
+						            	Physicians Formula pf健康粉底液油皮持久养肤遮瑕24小时奶油肌
+						            </a>
+						        </h2>
+						        <div class="price-wrapper">
+						            <span class="price clearfix">
+							            <span class="discount-amount"></span>
+							            ￥159
+						            </span>
+						            <span class="old-price"></span>
+					            </div>
+					            <div class="stock-addr">英国仓</div>
+			    			</li>
+			    			<li class="product-panel">
+			    				<a href="detail.html" class="product-view">
+			    					<img src="image/product/p05.jpg" alt="">
+			    					<span class="tag-first"></span>
+			    				</a>
+			    				<h2 class="product-desc">
+						            <a class="product-link" href="detail.html" target="_blank" title="美国Revlon露华浓进口粉底液持久无暇水润不脱色美白粉底110#150#">
+						            	美国Revlon露华浓进口粉底液持久无暇水润不脱色美白粉底110#150#
+						            </a>
+						        </h2>
+						        <div class="price-wrapper">
+						            <span class="price clearfix">
+							            <span class="discount-amount">80%OFF</span>
+							            ￥49
+						            </span>
+						            <span class="old-price">￥69</span>
+					            </div>
+					            <div class="stock-addr">美国仓</div>
+			    			</li>
+			    			<li class="product-panel">
+			    				<a href="detail.html" class="product-view">
+			    					<img src="image/product/p06.jpg" alt="">
+			    					<span class="tag-first"></span>
+			    				</a>
+			    				<h2 class="product-desc">
+						            <a class="product-link" href="detail.html" target="_blank" title="Embryolisse进口保湿隔离妆前乳法国大宝妆前打底隔离霜75ml">
+						            	Embryolisse进口保湿隔离妆前乳法国大宝妆前打底隔离霜75ml
+						            </a>
+						        </h2>
+						        <div class="price-wrapper">
+						            <span class="price clearfix">
+							            <span class="discount-amount">50%OFF</span>
+							            ￥59
+						            </span>
+						            <span class="old-price">￥129</span>
+					            </div>
+					            <div class="stock-addr">法国仓</div>
+			    			</li>
+			    			<li class="product-panel">
+			    				<a href="detail.html" class="product-view">
+			    					<img src="image/product/p07.jpg" alt="">
+			    					<span class="tag-first">买三免一</span>
+			    				</a>
+			    				<h2 class="product-desc">
+						            <a class="product-link" href="detail.html" target="_blank" title="美国RCMA无色透明定妆粉散粉蜜粉底胡椒粉持久定妆防水控油90ml">
+						            	美国RCMA无色透明定妆粉散粉蜜粉底胡椒粉持久定妆防水控油90ml
+						            </a>
+						        </h2>
+						        <div class="price-wrapper">
+						            <span class="price clearfix">
+							            <span class="discount-amount"></span>
+							            ￥99
+						            </span>
+						            <span class="old-price"></span>
+					            </div>
+					            <div class="stock-addr">美国仓</div>
+			    			</li>
+			    			<li class="product-panel">
+			    				<a href="detail.html" class="product-view">
+			    					<img src="image/product/p08.jpg" alt="">
+			    					<span class="tag-first"></span>
+			    				</a>
+			    				<h2 class="product-desc">
+						            <a class="product-link" href="detail.html" target="_blank" title="日本SOFINA苏菲娜进口瓷效妆前乳隔离霜女保湿干爽/水润 防晒隔离">
+						            	日本SOFINA苏菲娜进口瓷效妆前乳隔离霜女保湿干爽/水润 防晒隔离
+						            </a>
+						        </h2>
+						        <div class="price-wrapper">
+						            <span class="price clearfix">
+							            <span class="discount-amount">80%OFF</span>
+							            ￥89
+						            </span>
+						            <span class="old-price">￥129</span>
+					            </div>
+					            <div class="stock-addr">日本仓</div>
+			    			</li>
+			    			<li class="product-panel">
+			    				<a href="detail.html" class="product-view">
+			    					<img src="image/product/p09.jpg" alt="">
+			    					<span class="tag-first"></span>
+			    				</a>
+			    				<h2 class="product-desc">
+						            <a class="product-link" href="detail.html" target="_blank" title="法国Bourjois妙巴黎果疗美肌精华啫喱粉底液保湿遮瑕持久控油30ml">
+						            	法国Bourjois妙巴黎果疗美肌精华啫喱粉底液保湿遮瑕持久控油30ml
+						            </a>
+						        </h2>
+						        <div class="price-wrapper">
+						            <span class="price clearfix">
+							            <span class="discount-amount"></span>
+							            ￥129
+						            </span>
+						            <span class="old-price"></span>
+					            </div>
+					            <div class="stock-addr">法国仓</div>
+			    			</li>
+			    			<li class="product-panel">
+			    				<a href="detail.html" class="product-view">
+			    					<img src="image/product/p10.jpg" alt="">
+			    					<span class="tag-first"></span>
+			    				</a>
+			    				<h2 class="product-desc">
+						            <a class="product-link" href="detail.html" target="_blank" title="INTEGRATE资生堂完美意境保湿遮瑕气垫粉底液0#明亮色持久不脱妆">
+						            	INTEGRATE资生堂完美意境保湿遮瑕气垫粉底液0#明亮色持久不脱妆
+						            </a>
+						        </h2>
+						        <div class="price-wrapper">
+						            <span class="price clearfix">
+							            <span class="discount-amount">80%OFF</span>
+							            ￥149
+						            </span>
+						            <span class="old-price">￥199</span>
+					            </div>
+					            <div class="stock-addr">日本仓</div>
+			    			</li>
+			    		</ul>
+			    	</div>
+			    	<div class="product-list clearfix">
+			    		<ul>
+			    			<li class="product-panel">
+			    				<a href="detail.html" class="product-view">
+			    					<img src="image/product/p01.jpg" alt="">
+			    					<span class="tag-first">2件93折</span>
+			    				</a>
+			    				<h2 class="product-desc">
+						            <a class="product-link" href="detail.html" target="_blank" title="【官方正品】YSL圣罗兰莹亮纯魅丰盈黑心唇膏 莹亮星钻唇膏">	
+						            	【官方正品】YSL圣罗兰莹亮纯魅丰盈黑心唇膏 莹亮星钻唇膏
+						            </a>
+						        </h2>
+						        <div class="price-wrapper">
+						            <span class="price clearfix">
+							            <span class="discount-amount"></span>
+							            ￥199
+						            </span>
+						            <span class="old-price"></span>
+					            </div>
+					            <div class="stock-addr">美国仓</div>
+			    			</li>
+			    			<li class="product-panel">
+			    				<a href="detail.html" class="product-view">
+			    					<img src="image/product/p03.jpg" alt="">
+			    					<span class="tag-first"></span>
+			    				</a>
+			    				<h2 class="product-desc">
+						            <a class="product-link" href="detail.html" target="_blank" title="日本Shiseido资生堂完美意境粉底液霜奶油肌持久遮瑕提亮轻薄隔离">	
+						            	日本Shiseido资生堂完美意境粉底液霜奶油肌持久遮瑕提亮轻薄隔离
+						            </a>
+						        </h2>
+						        <div class="price-wrapper">
+						            <span class="price clearfix">
+							            <span class="discount-amount">80%OFF</span>
+							            ￥79
+						            </span>
+						            <span class="old-price">￥129</span>
+					            </div>
+					            <div class="stock-addr">日本仓</div>
+			    			</li>
+			    			<li class="product-panel">
+			    				<a href="detail.html" class="product-view">
+			    					<img src="image/product/p04.jpg" alt="">
+			    					<span class="tag-first">2件93折</span>
+			    				</a>
+			    				<h2 class="product-desc">
+						            <a class="product-link" href="detail.html" target="_blank" title="Physicians Formula pf健康粉底液油皮持久养肤遮瑕24小时奶油肌">
+						            	Physicians Formula pf健康粉底液油皮持久养肤遮瑕24小时奶油肌
+						            </a>
+						        </h2>
+						        <div class="price-wrapper">
+						            <span class="price clearfix">
+							            <span class="discount-amount"></span>
+							            ￥159
+						            </span>
+						            <span class="old-price"></span>
+					            </div>
+					            <div class="stock-addr">英国仓</div>
+			    			</li>
+			    			<li class="product-panel">
+			    				<a href="detail.html" class="product-view">
+			    					<img src="image/product/p02.jpg" alt="">
+			    					<span class="tag-first"></span>
+			    				</a>
+			    				<h2 class="product-desc">
+						            <a class="product-link" href="detail.html" target="_blank" title="资生堂ELIXIR /怡丽丝尔 优悦活颜净肤洗面奶 145g 清爽/滋润">
+						            	资生堂ELIXIR /怡丽丝尔 优悦活颜净肤洗面奶 145g 清爽/滋润
+						            </a>
+						        </h2>
+						        <div class="price-wrapper">
+						            <span class="price clearfix">
+							            <span class="discount-amount">80%OFF</span>
+							            ￥169
+						            </span>
+						            <span class="old-price">￥199</span>
+					            </div>
+					            <div class="stock-addr">日本仓</div>
+			    			</li>
+			    			<li class="product-panel">
+			    				<a href="detail.html" class="product-view">
+			    					<img src="image/product/p05.jpg" alt="">
+			    					<span class="tag-first"></span>
+			    				</a>
+			    				<h2 class="product-desc">
+						            <a class="product-link" href="detail.html" target="_blank" title="美国Revlon露华浓进口粉底液持久无暇水润不脱色美白粉底110#150#">
+						            	美国Revlon露华浓进口粉底液持久无暇水润不脱色美白粉底110#150#
+						            </a>
+						        </h2>
+						        <div class="price-wrapper">
+						            <span class="price clearfix">
+							            <span class="discount-amount">80%OFF</span>
+							            ￥49
+						            </span>
+						            <span class="old-price">￥69</span>
+					            </div>
+					            <div class="stock-addr">美国仓</div>
+			    			</li>
+			    			<li class="product-panel">
+			    				<a href="detail.html" class="product-view">
+			    					<img src="image/product/p06.jpg" alt="">
+			    					<span class="tag-first"></span>
+			    				</a>
+			    				<h2 class="product-desc">
+						            <a class="product-link" href="detail.html" target="_blank" title="Embryolisse进口保湿隔离妆前乳法国大宝妆前打底隔离霜75ml">
+						            	Embryolisse进口保湿隔离妆前乳法国大宝妆前打底隔离霜75ml
+						            </a>
+						        </h2>
+						        <div class="price-wrapper">
+						            <span class="price clearfix">
+							            <span class="discount-amount">50%OFF</span>
+							            ￥59
+						            </span>
+						            <span class="old-price">￥129</span>
+					            </div>
+					            <div class="stock-addr">法国仓</div>
+			    			</li>
+			    			<li class="product-panel">
+			    				<a href="detail.html" class="product-view">
+			    					<img src="image/product/p07.jpg" alt="">
+			    					<span class="tag-first">买三免一</span>
+			    				</a>
+			    				<h2 class="product-desc">
+						            <a class="product-link" href="detail.html" target="_blank" title="美国RCMA无色透明定妆粉散粉蜜粉底胡椒粉持久定妆防水控油90ml">
+						            	美国RCMA无色透明定妆粉散粉蜜粉底胡椒粉持久定妆防水控油90ml
+						            </a>
+						        </h2>
+						        <div class="price-wrapper">
+						            <span class="price clearfix">
+							            <span class="discount-amount"></span>
+							            ￥99
+						            </span>
+						            <span class="old-price"></span>
+					            </div>
+					            <div class="stock-addr">美国仓</div>
+			    			</li>
+			    			<li class="product-panel">
+			    				<a href="detail.html" class="product-view">
+			    					<img src="image/product/p08.jpg" alt="">
+			    					<span class="tag-first"></span>
+			    				</a>
+			    				<h2 class="product-desc">
+						            <a class="product-link" href="detail.html" target="_blank" title="日本SOFINA苏菲娜进口瓷效妆前乳隔离霜女保湿干爽/水润 防晒隔离">
+						            	日本SOFINA苏菲娜进口瓷效妆前乳隔离霜女保湿干爽/水润 防晒隔离
+						            </a>
+						        </h2>
+						        <div class="price-wrapper">
+						            <span class="price clearfix">
+							            <span class="discount-amount">80%OFF</span>
+							            ￥89
+						            </span>
+						            <span class="old-price">￥129</span>
+					            </div>
+					            <div class="stock-addr">日本仓</div>
+			    			</li>
+			    			<li class="product-panel">
+			    				<a href="detail.html" class="product-view">
+			    					<img src="image/product/p09.jpg" alt="">
+			    					<span class="tag-first"></span>
+			    				</a>
+			    				<h2 class="product-desc">
+						            <a class="product-link" href="detail.html" target="_blank" title="法国Bourjois妙巴黎果疗美肌精华啫喱粉底液保湿遮瑕持久控油30ml">
+						            	法国Bourjois妙巴黎果疗美肌精华啫喱粉底液保湿遮瑕持久控油30ml
+						            </a>
+						        </h2>
+						        <div class="price-wrapper">
+						            <span class="price clearfix">
+							            <span class="discount-amount"></span>
+							            ￥129
+						            </span>
+						            <span class="old-price"></span>
+					            </div>
+					            <div class="stock-addr">法国仓</div>
+			    			</li>
+			    			<li class="product-panel">
+			    				<a href="detail.html" class="product-view">
+			    					<img src="image/product/p10.jpg" alt="">
+			    					<span class="tag-first"></span>
+			    				</a>
+			    				<h2 class="product-desc">
+						            <a class="product-link" href="detail.html" target="_blank" title="INTEGRATE资生堂完美意境保湿遮瑕气垫粉底液0#明亮色持久不脱妆">
+						            	INTEGRATE资生堂完美意境保湿遮瑕气垫粉底液0#明亮色持久不脱妆
+						            </a>
+						        </h2>
+						        <div class="price-wrapper">
+						            <span class="price clearfix">
+							            <span class="discount-amount">80%OFF</span>
+							            ￥149
+						            </span>
+						            <span class="old-price">￥199</span>
+					            </div>
+					            <div class="stock-addr">日本仓</div>
+			    			</li>
+			    		</ul>
+			    	</div>
+			    	<div class="product-list clearfix">
+			    		<ul>
+			    			<li class="product-panel">
+			    				<a href="detail.html" class="product-view">
+			    					<img src="image/product/p01.jpg" alt="">
+			    					<span class="tag-first">2件93折</span>
+			    				</a>
+			    				<h2 class="product-desc">
+						            <a class="product-link" href="detail.html" target="_blank" title="【官方正品】YSL圣罗兰莹亮纯魅丰盈黑心唇膏 莹亮星钻唇膏">	
+						            	【官方正品】YSL圣罗兰莹亮纯魅丰盈黑心唇膏 莹亮星钻唇膏
+						            </a>
+						        </h2>
+						        <div class="price-wrapper">
+						            <span class="price clearfix">
+							            <span class="discount-amount"></span>
+							            ￥199
+						            </span>
+						            <span class="old-price"></span>
+					            </div>
+					            <div class="stock-addr">美国仓</div>
+			    			</li>
+			    			<li class="product-panel">
+			    				<a href="detail.html" class="product-view">
+			    					<img src="image/product/p03.jpg" alt="">
+			    					<span class="tag-first"></span>
+			    				</a>
+			    				<h2 class="product-desc">
+						            <a class="product-link" href="detail.html" target="_blank" title="日本Shiseido资生堂完美意境粉底液霜奶油肌持久遮瑕提亮轻薄隔离">	
+						            	日本Shiseido资生堂完美意境粉底液霜奶油肌持久遮瑕提亮轻薄隔离
+						            </a>
+						        </h2>
+						        <div class="price-wrapper">
+						            <span class="price clearfix">
+							            <span class="discount-amount">80%OFF</span>
+							            ￥79
+						            </span>
+						            <span class="old-price">￥129</span>
+					            </div>
+					            <div class="stock-addr">日本仓</div>
+			    			</li>
+			    			<li class="product-panel">
+			    				<a href="detail.html" class="product-view">
+			    					<img src="image/product/p04.jpg" alt="">
+			    					<span class="tag-first">2件93折</span>
+			    				</a>
+			    				<h2 class="product-desc">
+						            <a class="product-link" href="detail.html" target="_blank" title="Physicians Formula pf健康粉底液油皮持久养肤遮瑕24小时奶油肌">
+						            	Physicians Formula pf健康粉底液油皮持久养肤遮瑕24小时奶油肌
+						            </a>
+						        </h2>
+						        <div class="price-wrapper">
+						            <span class="price clearfix">
+							            <span class="discount-amount"></span>
+							            ￥159
+						            </span>
+						            <span class="old-price"></span>
+					            </div>
+					            <div class="stock-addr">英国仓</div>
+			    			</li>
+			    			<li class="product-panel">
+			    				<a href="detail.html" class="product-view">
+			    					<img src="image/product/p02.jpg" alt="">
+			    					<span class="tag-first"></span>
+			    				</a>
+			    				<h2 class="product-desc">
+						            <a class="product-link" href="detail.html" target="_blank" title="资生堂ELIXIR /怡丽丝尔 优悦活颜净肤洗面奶 145g 清爽/滋润">
+						            	资生堂ELIXIR /怡丽丝尔 优悦活颜净肤洗面奶 145g 清爽/滋润
+						            </a>
+						        </h2>
+						        <div class="price-wrapper">
+						            <span class="price clearfix">
+							            <span class="discount-amount">80%OFF</span>
+							            ￥169
+						            </span>
+						            <span class="old-price">￥199</span>
+					            </div>
+					            <div class="stock-addr">日本仓</div>
+			    			</li>
+			    			<li class="product-panel">
+			    				<a href="detail.html" class="product-view">
+			    					<img src="image/product/p05.jpg" alt="">
+			    					<span class="tag-first"></span>
+			    				</a>
+			    				<h2 class="product-desc">
+						            <a class="product-link" href="detail.html" target="_blank" title="美国Revlon露华浓进口粉底液持久无暇水润不脱色美白粉底110#150#">
+						            	美国Revlon露华浓进口粉底液持久无暇水润不脱色美白粉底110#150#
+						            </a>
+						        </h2>
+						        <div class="price-wrapper">
+						            <span class="price clearfix">
+							            <span class="discount-amount">80%OFF</span>
+							            ￥49
+						            </span>
+						            <span class="old-price">￥69</span>
+					            </div>
+					            <div class="stock-addr">美国仓</div>
+			    			</li>
+			    			<li class="product-panel">
+			    				<a href="detail.html" class="product-view">
+			    					<img src="image/product/p06.jpg" alt="">
+			    					<span class="tag-first"></span>
+			    				</a>
+			    				<h2 class="product-desc">
+						            <a class="product-link" href="detail.html" target="_blank" title="Embryolisse进口保湿隔离妆前乳法国大宝妆前打底隔离霜75ml">
+						            	Embryolisse进口保湿隔离妆前乳法国大宝妆前打底隔离霜75ml
+						            </a>
+						        </h2>
+						        <div class="price-wrapper">
+						            <span class="price clearfix">
+							            <span class="discount-amount">50%OFF</span>
+							            ￥59
+						            </span>
+						            <span class="old-price">￥129</span>
+					            </div>
+					            <div class="stock-addr">法国仓</div>
+			    			</li>
+			    			<li class="product-panel">
+			    				<a href="detail.html" class="product-view">
+			    					<img src="image/product/p09.jpg" alt="">
+			    					<span class="tag-first"></span>
+			    				</a>
+			    				<h2 class="product-desc">
+						            <a class="product-link" href="detail.html" target="_blank" title="法国Bourjois妙巴黎果疗美肌精华啫喱粉底液保湿遮瑕持久控油30ml">
+						            	法国Bourjois妙巴黎果疗美肌精华啫喱粉底液保湿遮瑕持久控油30ml
+						            </a>
+						        </h2>
+						        <div class="price-wrapper">
+						            <span class="price clearfix">
+							            <span class="discount-amount"></span>
+							            ￥129
+						            </span>
+						            <span class="old-price"></span>
+					            </div>
+					            <div class="stock-addr">法国仓</div>
+			    			</li>
+			    			<li class="product-panel">
+			    				<a href="detail.html" class="product-view">
+			    					<img src="image/product/p07.jpg" alt="">
+			    					<span class="tag-first">买三免一</span>
+			    				</a>
+			    				<h2 class="product-desc">
+						            <a class="product-link" href="detail.html" target="_blank" title="美国RCMA无色透明定妆粉散粉蜜粉底胡椒粉持久定妆防水控油90ml">
+						            	美国RCMA无色透明定妆粉散粉蜜粉底胡椒粉持久定妆防水控油90ml
+						            </a>
+						        </h2>
+						        <div class="price-wrapper">
+						            <span class="price clearfix">
+							            <span class="discount-amount"></span>
+							            ￥99
+						            </span>
+						            <span class="old-price"></span>
+					            </div>
+					            <div class="stock-addr">美国仓</div>
+			    			</li>
+			    			<li class="product-panel">
+			    				<a href="detail.html" class="product-view">
+			    					<img src="image/product/p08.jpg" alt="">
+			    					<span class="tag-first"></span>
+			    				</a>
+			    				<h2 class="product-desc">
+						            <a class="product-link" href="detail.html" target="_blank" title="日本SOFINA苏菲娜进口瓷效妆前乳隔离霜女保湿干爽/水润 防晒隔离">
+						            	日本SOFINA苏菲娜进口瓷效妆前乳隔离霜女保湿干爽/水润 防晒隔离
+						            </a>
+						        </h2>
+						        <div class="price-wrapper">
+						            <span class="price clearfix">
+							            <span class="discount-amount">80%OFF</span>
+							            ￥89
+						            </span>
+						            <span class="old-price">￥129</span>
+					            </div>
+					            <div class="stock-addr">日本仓</div>
+			    			</li>
+			    			<li class="product-panel">
+			    				<a href="detail.html" class="product-view">
+			    					<img src="image/product/p10.jpg" alt="">
+			    					<span class="tag-first"></span>
+			    				</a>
+			    				<h2 class="product-desc">
+						            <a class="product-link" href="detail.html" target="_blank" title="INTEGRATE资生堂完美意境保湿遮瑕气垫粉底液0#明亮色持久不脱妆">
+						            	INTEGRATE资生堂完美意境保湿遮瑕气垫粉底液0#明亮色持久不脱妆
+						            </a>
+						        </h2>
+						        <div class="price-wrapper">
+						            <span class="price clearfix">
+							            <span class="discount-amount">80%OFF</span>
+							            ￥149
+						            </span>
+						            <span class="old-price">￥199</span>
+					            </div>
+					            <div class="stock-addr">日本仓</div>
+			    			</li>
+			    		</ul>
+			    	</div>
+			    	<div class="product-list clearfix">
+			    		<ul>
+			    			<li class="product-panel">
+			    				<a href="detail.html" class="product-view">
+			    					<img src="image/product/p01.jpg" alt="">
+			    					<span class="tag-first">2件93折</span>
+			    				</a>
+			    				<h2 class="product-desc">
+						            <a class="product-link" href="detail.html" target="_blank" title="【官方正品】YSL圣罗兰莹亮纯魅丰盈黑心唇膏 莹亮星钻唇膏">	
+						            	【官方正品】YSL圣罗兰莹亮纯魅丰盈黑心唇膏 莹亮星钻唇膏
+						            </a>
+						        </h2>
+						        <div class="price-wrapper">
+						            <span class="price clearfix">
+							            <span class="discount-amount"></span>
+							            ￥199
+						            </span>
+						            <span class="old-price"></span>
+					            </div>
+					            <div class="stock-addr">美国仓</div>
+			    			</li>
+			    			<li class="product-panel">
+			    				<a href="detail.html" class="product-view">
+			    					<img src="image/product/p03.jpg" alt="">
+			    					<span class="tag-first"></span>
+			    				</a>
+			    				<h2 class="product-desc">
+						            <a class="product-link" href="detail.html" target="_blank" title="日本Shiseido资生堂完美意境粉底液霜奶油肌持久遮瑕提亮轻薄隔离">	
+						            	日本Shiseido资生堂完美意境粉底液霜奶油肌持久遮瑕提亮轻薄隔离
+						            </a>
+						        </h2>
+						        <div class="price-wrapper">
+						            <span class="price clearfix">
+							            <span class="discount-amount">80%OFF</span>
+							            ￥79
+						            </span>
+						            <span class="old-price">￥129</span>
+					            </div>
+					            <div class="stock-addr">日本仓</div>
+			    			</li>
+			    			<li class="product-panel">
+			    				<a href="detail.html" class="product-view">
+			    					<img src="image/product/p04.jpg" alt="">
+			    					<span class="tag-first">2件93折</span>
+			    				</a>
+			    				<h2 class="product-desc">
+						            <a class="product-link" href="detail.html" target="_blank" title="Physicians Formula pf健康粉底液油皮持久养肤遮瑕24小时奶油肌">
+						            	Physicians Formula pf健康粉底液油皮持久养肤遮瑕24小时奶油肌
+						            </a>
+						        </h2>
+						        <div class="price-wrapper">
+						            <span class="price clearfix">
+							            <span class="discount-amount"></span>
+							            ￥159
+						            </span>
+						            <span class="old-price"></span>
+					            </div>
+					            <div class="stock-addr">英国仓</div>
+			    			</li>
+			    			<li class="product-panel">
+			    				<a href="detail.html" class="product-view">
+			    					<img src="image/product/p02.jpg" alt="">
+			    					<span class="tag-first"></span>
+			    				</a>
+			    				<h2 class="product-desc">
+						            <a class="product-link" href="detail.html" target="_blank" title="资生堂ELIXIR /怡丽丝尔 优悦活颜净肤洗面奶 145g 清爽/滋润">
+						            	资生堂ELIXIR /怡丽丝尔 优悦活颜净肤洗面奶 145g 清爽/滋润
+						            </a>
+						        </h2>
+						        <div class="price-wrapper">
+						            <span class="price clearfix">
+							            <span class="discount-amount">80%OFF</span>
+							            ￥169
+						            </span>
+						            <span class="old-price">￥199</span>
+					            </div>
+					            <div class="stock-addr">日本仓</div>
+			    			</li>
+			    			<li class="product-panel">
+			    				<a href="detail.html" class="product-view">
+			    					<img src="image/product/p05.jpg" alt="">
+			    					<span class="tag-first"></span>
+			    				</a>
+			    				<h2 class="product-desc">
+						            <a class="product-link" href="detail.html" target="_blank" title="美国Revlon露华浓进口粉底液持久无暇水润不脱色美白粉底110#150#">
+						            	美国Revlon露华浓进口粉底液持久无暇水润不脱色美白粉底110#150#
+						            </a>
+						        </h2>
+						        <div class="price-wrapper">
+						            <span class="price clearfix">
+							            <span class="discount-amount">80%OFF</span>
+							            ￥49
+						            </span>
+						            <span class="old-price">￥69</span>
+					            </div>
+					            <div class="stock-addr">美国仓</div>
+			    			</li>
+			    			<li class="product-panel">
+			    				<a href="detail.html" class="product-view">
+			    					<img src="image/product/p07.jpg" alt="">
+			    					<span class="tag-first">买三免一</span>
+			    				</a>
+			    				<h2 class="product-desc">
+						            <a class="product-link" href="detail.html" target="_blank" title="美国RCMA无色透明定妆粉散粉蜜粉底胡椒粉持久定妆防水控油90ml">
+						            	美国RCMA无色透明定妆粉散粉蜜粉底胡椒粉持久定妆防水控油90ml
+						            </a>
+						        </h2>
+						        <div class="price-wrapper">
+						            <span class="price clearfix">
+							            <span class="discount-amount"></span>
+							            ￥99
+						            </span>
+						            <span class="old-price"></span>
+					            </div>
+					            <div class="stock-addr">美国仓</div>
+			    			</li>
+			    			<li class="product-panel">
+			    				<a href="detail.html" class="product-view">
+			    					<img src="image/product/p06.jpg" alt="">
+			    					<span class="tag-first"></span>
+			    				</a>
+			    				<h2 class="product-desc">
+						            <a class="product-link" href="detail.html" target="_blank" title="Embryolisse进口保湿隔离妆前乳法国大宝妆前打底隔离霜75ml">
+						            	Embryolisse进口保湿隔离妆前乳法国大宝妆前打底隔离霜75ml
+						            </a>
+						        </h2>
+						        <div class="price-wrapper">
+						            <span class="price clearfix">
+							            <span class="discount-amount">50%OFF</span>
+							            ￥59
+						            </span>
+						            <span class="old-price">￥129</span>
+					            </div>
+					            <div class="stock-addr">法国仓</div>
+			    			</li>
+			    			<li class="product-panel">
+			    				<a href="detail.html" class="product-view">
+			    					<img src="image/product/p09.jpg" alt="">
+			    					<span class="tag-first"></span>
+			    				</a>
+			    				<h2 class="product-desc">
+						            <a class="product-link" href="detail.html" target="_blank" title="法国Bourjois妙巴黎果疗美肌精华啫喱粉底液保湿遮瑕持久控油30ml">
+						            	法国Bourjois妙巴黎果疗美肌精华啫喱粉底液保湿遮瑕持久控油30ml
+						            </a>
+						        </h2>
+						        <div class="price-wrapper">
+						            <span class="price clearfix">
+							            <span class="discount-amount"></span>
+							            ￥129
+						            </span>
+						            <span class="old-price"></span>
+					            </div>
+					            <div class="stock-addr">法国仓</div>
+			    			</li>
+			    			<li class="product-panel">
+			    				<a href="detail.html" class="product-view">
+			    					<img src="image/product/p08.jpg" alt="">
+			    					<span class="tag-first"></span>
+			    				</a>
+			    				<h2 class="product-desc">
+						            <a class="product-link" href="detail.html" target="_blank" title="日本SOFINA苏菲娜进口瓷效妆前乳隔离霜女保湿干爽/水润 防晒隔离">
+						            	日本SOFINA苏菲娜进口瓷效妆前乳隔离霜女保湿干爽/水润 防晒隔离
+						            </a>
+						        </h2>
+						        <div class="price-wrapper">
+						            <span class="price clearfix">
+							            <span class="discount-amount">80%OFF</span>
+							            ￥89
+						            </span>
+						            <span class="old-price">￥129</span>
+					            </div>
+					            <div class="stock-addr">日本仓</div>
+			    			</li>
+			    			<li class="product-panel">
+			    				<a href="detail.html" class="product-view">
+			    					<img src="image/product/p10.jpg" alt="">
+			    					<span class="tag-first"></span>
+			    				</a>
+			    				<h2 class="product-desc">
+						            <a class="product-link" href="detail.html" target="_blank" title="INTEGRATE资生堂完美意境保湿遮瑕气垫粉底液0#明亮色持久不脱妆">
+						            	INTEGRATE资生堂完美意境保湿遮瑕气垫粉底液0#明亮色持久不脱妆
+						            </a>
+						        </h2>
+						        <div class="price-wrapper">
+						            <span class="price clearfix">
+							            <span class="discount-amount">80%OFF</span>
+							            ￥149
+						            </span>
+						            <span class="old-price">￥199</span>
+					            </div>
+					            <div class="stock-addr">日本仓</div>
+			    			</li>
+			    		</ul>
+			    	</div>
+			    	<div class="product-list clearfix">
+			    		<ul>
+			    			<li class="product-panel">
+			    				<a href="detail.html" class="product-view">
+			    					<img src="image/product/p01.jpg" alt="">
+			    					<span class="tag-first">2件93折</span>
+			    				</a>
+			    				<h2 class="product-desc">
+						            <a class="product-link" href="detail.html" target="_blank" title="【官方正品】YSL圣罗兰莹亮纯魅丰盈黑心唇膏 莹亮星钻唇膏">	
+						            	【官方正品】YSL圣罗兰莹亮纯魅丰盈黑心唇膏 莹亮星钻唇膏
+						            </a>
+						        </h2>
+						        <div class="price-wrapper">
+						            <span class="price clearfix">
+							            <span class="discount-amount"></span>
+							            ￥199
+						            </span>
+						            <span class="old-price"></span>
+					            </div>
+					            <div class="stock-addr">美国仓</div>
+			    			</li>
+			    			<li class="product-panel">
+			    				<a href="detail.html" class="product-view">
+			    					<img src="image/product/p03.jpg" alt="">
+			    					<span class="tag-first"></span>
+			    				</a>
+			    				<h2 class="product-desc">
+						            <a class="product-link" href="detail.html" target="_blank" title="日本Shiseido资生堂完美意境粉底液霜奶油肌持久遮瑕提亮轻薄隔离">	
+						            	日本Shiseido资生堂完美意境粉底液霜奶油肌持久遮瑕提亮轻薄隔离
+						            </a>
+						        </h2>
+						        <div class="price-wrapper">
+						            <span class="price clearfix">
+							            <span class="discount-amount">80%OFF</span>
+							            ￥79
+						            </span>
+						            <span class="old-price">￥129</span>
+					            </div>
+					            <div class="stock-addr">日本仓</div>
+			    			</li>
+			    			<li class="product-panel">
+			    				<a href="detail.html" class="product-view">
+			    					<img src="image/product/p06.jpg" alt="">
+			    					<span class="tag-first"></span>
+			    				</a>
+			    				<h2 class="product-desc">
+						            <a class="product-link" href="detail.html" target="_blank" title="Embryolisse进口保湿隔离妆前乳法国大宝妆前打底隔离霜75ml">
+						            	Embryolisse进口保湿隔离妆前乳法国大宝妆前打底隔离霜75ml
+						            </a>
+						        </h2>
+						        <div class="price-wrapper">
+						            <span class="price clearfix">
+							            <span class="discount-amount">50%OFF</span>
+							            ￥59
+						            </span>
+						            <span class="old-price">￥129</span>
+					            </div>
+					            <div class="stock-addr">法国仓</div>
+			    			</li>
+			    			<li class="product-panel">
+			    				<a href="detail.html" class="product-view">
+			    					<img src="image/product/p02.jpg" alt="">
+			    					<span class="tag-first"></span>
+			    				</a>
+			    				<h2 class="product-desc">
+						            <a class="product-link" href="detail.html" target="_blank" title="资生堂ELIXIR /怡丽丝尔 优悦活颜净肤洗面奶 145g 清爽/滋润">
+						            	资生堂ELIXIR /怡丽丝尔 优悦活颜净肤洗面奶 145g 清爽/滋润
+						            </a>
+						        </h2>
+						        <div class="price-wrapper">
+						            <span class="price clearfix">
+							            <span class="discount-amount">80%OFF</span>
+							            ￥169
+						            </span>
+						            <span class="old-price">￥199</span>
+					            </div>
+					            <div class="stock-addr">日本仓</div>
+			    			</li>
+			    			<li class="product-panel">
+			    				<a href="detail.html" class="product-view">
+			    					<img src="image/product/p05.jpg" alt="">
+			    					<span class="tag-first"></span>
+			    				</a>
+			    				<h2 class="product-desc">
+						            <a class="product-link" href="detail.html" target="_blank" title="美国Revlon露华浓进口粉底液持久无暇水润不脱色美白粉底110#150#">
+						            	美国Revlon露华浓进口粉底液持久无暇水润不脱色美白粉底110#150#
+						            </a>
+						        </h2>
+						        <div class="price-wrapper">
+						            <span class="price clearfix">
+							            <span class="discount-amount">80%OFF</span>
+							            ￥49
+						            </span>
+						            <span class="old-price">￥69</span>
+					            </div>
+					            <div class="stock-addr">美国仓</div>
+			    			</li>
+			    			<li class="product-panel">
+			    				<a href="detail.html" class="product-view">
+			    					<img src="image/product/p07.jpg" alt="">
+			    					<span class="tag-first">买三免一</span>
+			    				</a>
+			    				<h2 class="product-desc">
+						            <a class="product-link" href="detail.html" target="_blank" title="美国RCMA无色透明定妆粉散粉蜜粉底胡椒粉持久定妆防水控油90ml">
+						            	美国RCMA无色透明定妆粉散粉蜜粉底胡椒粉持久定妆防水控油90ml
+						            </a>
+						        </h2>
+						        <div class="price-wrapper">
+						            <span class="price clearfix">
+							            <span class="discount-amount"></span>
+							            ￥99
+						            </span>
+						            <span class="old-price"></span>
+					            </div>
+					            <div class="stock-addr">美国仓</div>
+			    			</li>
+			    			<li class="product-panel">
+			    				<a href="detail.html" class="product-view">
+			    					<img src="image/product/p06.jpg" alt="">
+			    					<span class="tag-first"></span>
+			    				</a>
+			    				<h2 class="product-desc">
+						            <a class="product-link" href="detail.html" target="_blank" title="Embryolisse进口保湿隔离妆前乳法国大宝妆前打底隔离霜75ml">
+						            	Embryolisse进口保湿隔离妆前乳法国大宝妆前打底隔离霜75ml
+						            </a>
+						        </h2>
+						        <div class="price-wrapper">
+						            <span class="price clearfix">
+							            <span class="discount-amount">50%OFF</span>
+							            ￥59
+						            </span>
+						            <span class="old-price">￥129</span>
+					            </div>
+					            <div class="stock-addr">法国仓</div>
+			    			</li>
+			    			<li class="product-panel">
+			    				<a href="detail.html" class="product-view">
+			    					<img src="image/product/p09.jpg" alt="">
+			    					<span class="tag-first"></span>
+			    				</a>
+			    				<h2 class="product-desc">
+						            <a class="product-link" href="detail.html" target="_blank" title="法国Bourjois妙巴黎果疗美肌精华啫喱粉底液保湿遮瑕持久控油30ml">
+						            	法国Bourjois妙巴黎果疗美肌精华啫喱粉底液保湿遮瑕持久控油30ml
+						            </a>
+						        </h2>
+						        <div class="price-wrapper">
+						            <span class="price clearfix">
+							            <span class="discount-amount"></span>
+							            ￥129
+						            </span>
+						            <span class="old-price"></span>
+					            </div>
+					            <div class="stock-addr">法国仓</div>
+			    			</li>
+			    			<li class="product-panel">
+			    				<a href="detail.html" class="product-view">
+			    					<img src="image/product/p08.jpg" alt="">
+			    					<span class="tag-first"></span>
+			    				</a>
+			    				<h2 class="product-desc">
+						            <a class="product-link" href="detail.html" target="_blank" title="日本SOFINA苏菲娜进口瓷效妆前乳隔离霜女保湿干爽/水润 防晒隔离">
+						            	日本SOFINA苏菲娜进口瓷效妆前乳隔离霜女保湿干爽/水润 防晒隔离
+						            </a>
+						        </h2>
+						        <div class="price-wrapper">
+						            <span class="price clearfix">
+							            <span class="discount-amount">80%OFF</span>
+							            ￥89
+						            </span>
+						            <span class="old-price">￥129</span>
+					            </div>
+					            <div class="stock-addr">日本仓</div>
+			    			</li>
+			    			<li class="product-panel">
+			    				<a href="detail.html" class="product-view">
+			    					<img src="image/product/p10.jpg" alt="">
+			    					<span class="tag-first"></span>
+			    				</a>
+			    				<h2 class="product-desc">
+						            <a class="product-link" href="detail.html" target="_blank" title="INTEGRATE资生堂完美意境保湿遮瑕气垫粉底液0#明亮色持久不脱妆">
+						            	INTEGRATE资生堂完美意境保湿遮瑕气垫粉底液0#明亮色持久不脱妆
+						            </a>
+						        </h2>
+						        <div class="price-wrapper">
+						            <span class="price clearfix">
+							            <span class="discount-amount">80%OFF</span>
+							            ￥149
+						            </span>
+						            <span class="old-price">￥199</span>
+					            </div>
+					            <div class="stock-addr">日本仓</div>
+			    			</li>
+			    		</ul>
+			    	</div>
+		    	</div>
+		    </div>
+		    <!-- 商品推荐结束 -->
+
+			<div class="hot-brands clearfix">
+				<strong class="title">热销品牌</strong>
+				<div class="brands-list">
+					<button class="prev arrow" aria-label="Previous" type="button" style="display: block;">Previous</button>
+					<ul>
+						<li>
+							<a href="" target="_blank">
+								<img class="brands-img" src="image/brand01.jpg" alt="">
+							</a>
+				        </li>
+				        <li>
+							<a href="" target="_blank">
+								<img class="brands-img" src="image/brand02.jpg" alt="">
+							</a>
+				        </li>
+				        <li>
+							<a href="" target="_blank">
+								<img class="brands-img" src="image/brand03.jpg" alt="">
+							</a>
+				        </li>
+				        <li>
+							<a href="" target="_blank">
+								<img class="brands-img" src="image/brand04.jpg" alt="">
+							</a>
+				        </li>
+				        <li>
+							<a href="" target="_blank">
+								<img class="brands-img" src="image/brand05.jpg" alt="">
+							</a>
+				        </li>
+				        <li>
+							<a href="" target="_blank">
+								<img class="brands-img" src="image/brand06.jpg" alt="">
+							</a>
+				        </li>
+				        <li>
+							<a href="" target="_blank">
+								<img class="brands-img" src="image/brand07.jpg" alt="">
+							</a>
+				        </li>
+					</ul>
+					<ul>
+						<li>
+							<a href="" target="_blank">
+								<img class="brands-img" src="image/brand01.jpg" alt="">
+							</a>
+				        </li>
+				        <li>
+							<a href="" target="_blank">
+								<img class="brands-img" src="image/brand02.jpg" alt="">
+							</a>
+				        </li>
+				        <li>
+							<a href="" target="_blank">
+								<img class="brands-img" src="image/brand03.jpg" alt="">
+							</a>
+				        </li>
+				        <li>
+							<a href="" target="_blank">
+								<img class="brands-img" src="image/brand05.jpg" alt="">
+							</a>
+				        </li>
+				        <li>
+							<a href="" target="_blank">
+								<img class="brands-img" src="image/brand06.jpg" alt="">
+							</a>
+				        </li>
+				        <li>
+							<a href="" target="_blank">
+								<img class="brands-img" src="image/brand04.jpg" alt="">
+							</a>
+				        </li>
+				        <li>
+							<a href="" target="_blank">
+								<img class="brands-img" src="image/brand07.jpg" alt="">
+							</a>
+				        </li>
+					</ul>
+					<button class="next arrow" aria-label="Next" type="button" style="display: block;">Next</button>
+				</div>
+			</div>
+
+			<div class="sharing-session clearfix">
+				<strong class="title">种草大会</strong>
+				<div class="sharing-list clearfix">
+					<ul>
+						<li>
+			                <a class="sharing-link" href="" target="_blank">
+			                    <img class="sharing-img" src="image/sharing/s01.jpg">
+			                </a>
+			                <a class="sharing-title" href="">Canmake | 舒芙蕾四色眼影盘我又心动了！超群的质感，你值得尝试。</a>
+			                <a class="buy-btn" href="" target="_blank">点击选购</a>
+			          	</li>
+			          	<li>
+			                <a class="sharing-link" href="" target="_blank">
+			                    <img class="sharing-img" src="image/sharing/s02.jpg">
+			                </a>
+			                <a class="sharing-title" href="">Armani | 阿玛尼绝版回归！甜辣橘棕太飒了！！百搭不挑皮，本夏天的灵魂。</a>
+			                <a class="buy-btn" href="" target="_blank">点击选购</a>
+			          	</li>
+			          	<li>
+			                <a class="sharing-link" href="" target="_blank">
+			                    <img class="sharing-img" src="image/sharing/s03.jpg">
+			                </a>
+			                <a class="sharing-title" href="">Eiio | 这洗面奶把毛孔呼啦啦抹清透了！才2杯奶茶钱好吗，上啊姐妹们！</a>
+			                <a class="buy-btn" href="" target="_blank">点击选购</a>
+			          	</li>
+					</ul>
+				</div>
+			</div>
+
+			<div class="guess-like clearfix">
+				<strong class="title">猜你喜欢</strong>
+				<div class="guess-list clearfix">
+					<ul>
+						<li class="product-panel" style="clear:left">
+		    				<a href="detail.html" class="product-view">
+		    					<img src="image/product/p01.jpg" alt="">
+		    					<span class="tag-first">2件93折</span>
+		    				</a>
+		    				<h2 class="product-desc">
+					            <a class="product-link" href="detail.html" target="_blank" title="【官方正品】YSL圣罗兰莹亮纯魅丰盈黑心唇膏 莹亮星钻唇膏">	
+					            	【官方正品】YSL圣罗兰莹亮纯魅丰盈黑心唇膏 莹亮星钻唇膏
+					            </a>
+					        </h2>
+					        <div class="price-wrapper">
+					            <span class="price clearfix">
+						            <span class="discount-amount"></span>
+						            ￥199
+					            </span>
+					            <span class="old-price"></span>
+				            </div>
+				            <div class="stock-addr">美国仓</div>
+		    			</li>
+		    			<li class="product-panel">
+		    				<a href="detail.html" class="product-view">
+		    					<img src="image/product/p10.jpg" alt="">
+		    					<span class="tag-first"></span>
+		    				</a>
+		    				<h2 class="product-desc">
+					            <a class="product-link" href="detail.html" target="_blank" title="INTEGRATE资生堂完美意境保湿遮瑕气垫粉底液0#明亮色持久不脱妆">
+					            	INTEGRATE资生堂完美意境保湿遮瑕气垫粉底液0#明亮色持久不脱妆
+					            </a>
+					        </h2>
+					        <div class="price-wrapper">
+					            <span class="price clearfix">
+						            <span class="discount-amount">80%OFF</span>
+						            ￥149
+					            </span>
+					            <span class="old-price">￥199</span>
+				            </div>
+				            <div class="stock-addr">日本仓</div>
+		    			</li>
+		    			<li class="product-panel">
+		    				<a href="detail.html" class="product-view">
+		    					<img src="image/product/p05.jpg" alt="">
+		    					<span class="tag-first"></span>
+		    				</a>
+		    				<h2 class="product-desc">
+					            <a class="product-link" href="detail.html" target="_blank" title="美国Revlon露华浓进口粉底液持久无暇水润不脱色美白粉底110#150#">
+					            	美国Revlon露华浓进口粉底液持久无暇水润不脱色美白粉底110#150#
+					            </a>
+					        </h2>
+					        <div class="price-wrapper">
+					            <span class="price clearfix">
+						            <span class="discount-amount">80%OFF</span>
+						            ￥49
+					            </span>
+					            <span class="old-price">￥69</span>
+				            </div>
+				            <div class="stock-addr">美国仓</div>
+		    			</li>
+		    			<li class="product-panel">
+		    				<a href="detail.html" class="product-view">
+		    					<img src="image/product/p06.jpg" alt="">
+		    					<span class="tag-first"></span>
+		    				</a>
+		    				<h2 class="product-desc">
+					            <a class="product-link" href="detail.html" target="_blank" title="Embryolisse进口保湿隔离妆前乳法国大宝妆前打底隔离霜75ml">
+					            	Embryolisse进口保湿隔离妆前乳法国大宝妆前打底隔离霜75ml
+					            </a>
+					        </h2>
+					        <div class="price-wrapper">
+					            <span class="price clearfix">
+						            <span class="discount-amount">50%OFF</span>
+						            ￥59
+					            </span>
+					            <span class="old-price">￥129</span>
+				            </div>
+				            <div class="stock-addr">法国仓</div>
+		    			</li>
+		    			<li class="product-panel">
+		    				<a href="detail.html" class="product-view">
+		    					<img src="image/product/p07.jpg" alt="">
+		    					<span class="tag-first">买三免一</span>
+		    				</a>
+		    				<h2 class="product-desc">
+					            <a class="product-link" href="detail.html" target="_blank" title="美国RCMA无色透明定妆粉散粉蜜粉底胡椒粉持久定妆防水控油90ml">
+					            	美国RCMA无色透明定妆粉散粉蜜粉底胡椒粉持久定妆防水控油90ml
+					            </a>
+					        </h2>
+					        <div class="price-wrapper">
+					            <span class="price clearfix">
+						            <span class="discount-amount"></span>
+						            ￥99
+					            </span>
+					            <span class="old-price"></span>
+				            </div>
+				            <div class="stock-addr">美国仓</div>
+		    			</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+    </div>
+
+	<div class="to-head"><a href="#"></a></div>
+
+    <div class="footer clearfix">
+	    <div class="footer-inner clearfix">
+	        <div class="col site-infos">
+	            <a class="footer-logo-link" href="index.html">
+	                <img width="320" src="image/logo.png">
+	            </a>
+	            <p>中文客服：china@rainbowtime.com</p>
+	            <p>工作时间：9:00 - 18:00（北京时间），周末及节假日除外</p>
+	            <p>rainbowtime.com © 2005-2019. All rights reserved.</p>
+	        </div>
+	        <div class="col">
+	            <h6>关于我们</h6>
+	            <ul>
+	                <li><a href="" target="_blank">商户简介</a></li>
+	                <li><a href="" target="_blank">正品承诺</a></li>
+	                <li><a href="" target="_blank">服务条款</a></li>
+	                <li><a href="" target="_blank">隐私政策</a></li>
+	                <li><a href="" target="_blank">消费者告知书</a></li>
+	            </ul>
+	        </div>
+	        <div class="col">
+	            <h6>消费者指南</h6>
+	            <ul>
+	                <li><a href="" target="_blank">购物流程</a></li>
+	                <li><a href="" target="_blank">活动规则</a></li>
+	                <li><a href="" target="_blank">退货政策</a></li>
+	                <li><a href="" target="_blank">关于我们</a></li>
+	                <li><a href="" target="_blank">联系我们</a></li>
+	            </ul>
+	        </div>
+	        <div class="col">
+	            <h6>个人中心</h6>
+	            <ul>
+	                <li><a href="" target="_blank">我的账户</a></li>
+	                <li><a href="" target="_blank">我的订单</a></li>
+	                <li><a href="" target="_blank">收货地址</a></li>
+	                <li><a href="" target="_blank">我的优惠</a></li>
+	                <li><a href="" target="_blank">我的晒单</a></li>
+	            </ul>
+	        </div>
+	        <div class="col qrcodes">
+	            <h6>关注官方账号，获取更多福利</h6>
+	            <div class="img-cap first-elem">
+	                <img width="88" height="88" src="image/QRcode.png">
+	                <span>官方微信</span>
+	            </div>
+	            <div class="img-cap">
+	                <img width="88" height="88" src="image/QRcode.png">
+	                <span>官方微博</span>
+	            </div>
+	        </div>
+	    </div>
+	</div>
+</body>
+</html>

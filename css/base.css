@@ -1,0 +1,487 @@
+body {
+    font-size: 12px;
+    padding: 0;
+    margin: 0;
+    background: #fff;
+    overflow: auto;
+}
+ul {
+    margin: 0;
+    padding: 0;
+}
+li {
+    list-style: none;
+}
+a {
+    color: #333;
+    text-decoration: none;
+}
+table {
+    border-collapse: collapse;
+}
+thead {
+    display: table-header-group;
+    vertical-align: middle;
+    border-color: inherit;
+}
+tr {
+    display: table-row;
+    vertical-align: inherit;
+    border-color: inherit;
+}
+.clearfix {
+    zoom: 1;
+    clear: both;
+}
+/*header*/
+.header {
+	height: 47px;
+    line-height: 47px;
+    border-bottom: 1px solid #ececec;
+    background: #fff;
+    font-size: 12px;
+}
+.header-box {
+    width: 1190px;
+	margin: 0 auto;
+}
+/*user样式*/
+.header .user{
+    height: 48px;
+    float: left;
+}
+.header .user li {
+    float: left;
+}
+.header .login {
+    position: relative;
+    padding-left: 31px;
+}
+.header .m-line {
+    margin: 0 8px;
+}
+.header .register a {
+    position: relative;
+    padding-right: 20px;
+}
+.header .login:before {
+    position: absolute;
+    left: 0;
+    top: 13px;
+    content: "";
+    width: 20px;
+    height: 20px;
+    background: url(../image/icon/login.svg) no-repeat;
+    background-size:20px;
+}
+.header .register a:after {
+    position: absolute;
+    top: 2px;
+    right: -3px;
+    content: "";
+    width: 12px;
+    height: 12px;
+    background: url(../image/icon/more.svg) no-repeat;
+    background-size:12px;
+    transform: rotate(0);
+    transition: transform .2s ease-in-out;
+}
+.header .user:hover .register a:after {
+    transform: rotate(180deg);
+}
+.header .login-menu {
+    position: absolute;
+    top: 48px;
+    left: 0;
+    z-index: 1;
+    display: none;
+    width: 180px;
+    background: #fff;
+    box-shadow: 0 0 5px rgba(0,0,0,.2);
+}
+.header .login-menu li {
+    position: relative;
+    float: none;
+    line-height: 40px;
+    font-size: 13px;
+    cursor: pointer;
+}
+.header .login-menu a {
+    position: absolute;
+    top: 0;
+    left: 0;
+    box-sizing: border-box;
+    width: 100%;
+    height: 40px;
+    padding-left: 47px;
+    color: #333;
+}
+.header .login-menu .menu-icon {
+    display: inline-block;
+    font-size: 14px;
+    color: #333;
+    margin: 15px 20px 0 20px;
+    width: 12px;
+    height: 12px;
+}
+.header .login-menu .menu-uc .menu-icon {
+    background: url(../image/icon/user.svg) no-repeat;
+    background-size: 12px;
+}
+.header .login-menu .menu-uc:hover .menu-icon {
+    background: url(../image/icon/user-.svg) no-repeat;
+    background-size: 12px;
+}
+.header .login-menu .menu-fav .menu-icon {
+    background: url(../image/icon/fav.svg) no-repeat;
+    background-size: 12px;
+}
+.header .login-menu .menu-fav:hover .menu-icon {
+    background: url(../image/icon/fav-.svg) no-repeat;
+    background-size: 12px;
+}
+/*鼠标移入user改变login-menu样式*/
+.header .user:hover .login-menu {
+    display: block;
+}
+.header .login-menu li:hover {
+   background: #333;
+}
+.header .login-menu li:hover a {
+    color: #fff;
+}
+
+/*service样式*/
+.header .service {
+    float: right;
+}
+.header .service li {
+    float: left;
+    line-height: 20px;
+    margin: 10px auto 5px;
+    padding: 4px 20px 8px;
+    border-left: 1px solid #ececec;
+}
+.header .service li:first-child {
+    border-left: none;
+    padding-left: 0;
+    position: relative;
+    height: 48px;
+}
+.header .exchange a {
+    position: relative;
+    padding-right: 21px;
+}
+.header .exchange .exchange-menu {
+    display: none;
+    position: absolute;
+    top: 38px;
+    right: 0;
+    z-index: 502;
+    width: 180px;
+    background: #fff;
+    box-shadow: 0 0 5px rgba(0,0,0,.2);
+    text-align: center;
+}
+.header .exchange a:after {
+    position: absolute;
+    top: 2px;
+    right: -3px;
+    content: "";
+    width: 12px;
+    height: 12px;
+    background: url(../image/icon/more.svg) no-repeat;
+    background-size:12px;
+    transform: rotate(0);
+    transition: transform .2s ease-in-out;
+}
+.header .exchange:hover a:after {
+    transform: rotate(180deg);
+}
+/*鼠标移入exchange改变exchange-menu样式*/
+.header .exchange:hover .exchange-menu{
+    display: block;
+}
+.header .exchange .exchange-menu .tb-wish {
+    float: none;
+    line-height: 40px;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+.header .exchange .exchange-menu .tb-wish .rate-help-anchor {
+    position: absolute;
+    top: 13px;
+    right: 20px;
+    display: inline-block;
+    content: "";
+    width: 16px;
+    height: 16px;
+    background: url(../image/icon/tip.svg) no-repeat;
+    background-size:16px;
+}
+.header .exchange .exchange-menu .rate-help-content {
+    position: absolute;
+    width: 150px;
+    top: -10px;
+    left: 200px;
+    box-shadow: 0 0 5px rgba(0,0,0,.2);
+    display: none;
+    background: #fff;
+}
+.header .exchange .exchange-menu .rate-help-content .rate-help {
+    font-weight: normal;
+}
+.header .kefu:before {
+    content: "";
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    margin-top: -2px;
+    margin-right: 5px;
+    background: url(../image/icon/kefu.svg) no-repeat;
+    background-size: 20px;
+    vertical-align: middle;
+}
+.header .shopping-cart a:before {
+    content: "";
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    margin-top: -5px;
+    margin-right: 8px;
+    background: url(../image/icon/cart.svg) no-repeat;
+    background-size: 20px;
+    vertical-align: middle;
+}
+.header .notification a:hover {
+    text-decoration: underline;
+}
+
+/*logo-and-search样式*/
+.logo-and-search {
+    height: 110px;
+    background: #fff;
+}
+.logo-and-search .logo-inner {
+    position: relative;
+    width: 1190px;
+    margin: 0 auto;
+}
+.logo-and-search .logo {
+    position: absolute;
+    top: 30px;
+    left: 0;
+}
+.logo-and-search .search-wrap {
+    position: absolute;
+    top: 40px;
+    right: 0;
+    width: 590px;
+}
+.logo-and-search .search-wrap .input-keywords {
+    float: left;
+    width: 480px;
+    height: 32px;
+    line-height: 32px;
+    padding: 2px 19px;
+    border: 1px solid #ddd;
+    font-size: 13px;
+    outline:none;
+}
+.logo-and-search .search-wrap .input-keywords:focus {
+    border: 1px solid #000;
+}
+.logo-and-search .search-wrap .btn-search {
+    float: right;
+    width: 60px;
+    height: 38px;
+    line-height: 38px;
+    border: none;
+    background: #000 url(../image/icon/search.svg) 50% no-repeat;
+    background-size: 18px;
+    font-size: 0;
+    color: #fff;
+    text-indent: -9999px;
+    opacity: 1;
+    transition: opacity .4s ease-in-out;
+    cursor: pointer;
+    outline:none;
+}
+.logo-and-search .search-wrap .btn-search:hover {
+    opacity:0.8;
+    filter: alpha(opacity=0.8);
+    background: #8DA4F0 url(../image/icon/search.svg) 50% no-repeat;
+    background-size: 18px;
+}
+
+/*nav样式*/
+.nav {
+    background-color: #f2f2f2;
+    overflow: hidden;
+    z-index: 9999;
+    width: 100%;
+}
+.nav .nav-inner {
+    margin: 0 auto;
+    overflow: hidden;
+    width: 1190px;
+    height: 48px;
+}
+.nav .nav-inner .primary li {
+    float: left;
+    margin-right: 35px;
+    font-size: 14px;
+    letter-spacing: 2px;
+}
+.nav .nav-inner .primary li.active {
+    background-color: #bcc8f0;
+}
+.nav .nav-inner .primary li a {
+    display: block;
+    line-height: 48px;
+    text-transform: uppercase;
+    display: block;
+    padding: 0 22px;
+    font-weight: 700;
+    color: #000;
+    text-transform: uppercase;
+    transition: color 0.5s;
+}
+.nav .nav-inner .primary li:hover a {
+    color: #ff7200;
+}
+
+/*返回顶部样式*/
+.to-head{
+    position: fixed;
+    left: 52%;
+    bottom: 100px;
+    z-index: 99999;
+    width: 44px;
+    height: 44px;
+    margin-left: 615px;
+    visibility: hidden;
+}
+.to-head>a{
+    margin-top: 0;
+    margin-left: 0;
+    width: 44px;
+    height: 44px;
+    display: block;
+    background: #000 url(../image/icon/to-head.svg) no-repeat 4px;
+    background-size: 35px;
+}
+.to-head:hover a{
+    background: #8DA4F0 url(../image/icon/to-head.svg) no-repeat 4px;
+    background-size: 35px;
+}
+
+/*footer样式*/
+.footer {
+    width: 100%;
+    height: 250px;
+    margin-top: 100px;
+    display: inline-block;
+    background: #fff;
+    font-size: 13px;
+    color: #ccc;
+    box-shadow: 0 0 5px rgba(0,0,0,.2);
+}
+.footer-inner {
+    width: 1190px;
+    margin: 0 auto;
+}
+.footer .col {
+    float: left;
+    width: 176px;
+}
+.footer .col h6 {
+    line-height: 1;
+    margin-bottom: 15px;
+    font-weight: 700;
+    font-size: 16px;
+    color: #333;
+}
+.footer .col li {
+    line-height: 28px;
+    font-size: 12px;
+}
+.footer .site-infos {
+    width: 420px;
+    margin-right: 0;
+}
+.footer .site-infos .footer-logo-link {
+    display: block;
+    width: 265px;
+    margin-bottom: 44px;
+}
+.footer .site-infos>p {
+    line-height: 1.5;
+    margin-bottom: 10px;
+    font-size: 12px;
+    color: #333;
+}
+.footer .col a {
+    color: #333;
+}
+.footer .site-infos .footer-logo-link>img {
+    display: block;
+    width: 100%;
+    margin-top: 25px;
+}
+.footer .qrcodes {
+    float: right;
+    width: 240px;
+    font-size: 0;
+}
+.footer .qrcodes>h6 {
+    line-height: 1;
+    margin-bottom: 24px;
+    font-weight: 700;
+    font-size: 16px;
+    color: #333;
+}
+.footer .qrcodes .img-cap.first-elem {
+    margin-right: 20px;
+}
+.footer .qrcodes .img-cap {
+    display: inline-block;
+    width: 88px;
+    padding: 9px 10px 3px;
+    border-radius: 6px;
+    background: #f5f5f5;
+}
+.footer .qrcodes .img-cap>span {
+    display: block;
+    line-height: 25px;
+    font-size: 12px;
+    color: #666;
+    text-align: center;
+}
+
+.page-con{
+    line-height: 26px;
+    display: inline-block;
+    float: right;
+    margin-top: 20px;
+}
+.page-con .page {
+    float: left;
+    width: 30px;
+    height: 28px;
+    border: 1px solid #ececec;
+    cursor: pointer;
+    text-align: center;
+    margin: 0 5px;
+}
+.page-con .page.prev-page, .page-con .page.next-page {
+    width: 48px;
+}
+.page-con .page.active {
+    background: #000;
+    color: #fff;
+}
+.page-con .page:hover {
+    border-color: #000;
+}

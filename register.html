@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>REGISTER / 注册</title>
+	<link rel="stylesheet" href="css/base.css">
+	<link rel="stylesheet" href="css/action.css">
+	<script type="text/javascript" src="js/jquery-3.4.1.js"></script>
+	<script type="text/javascript" src="js/base.js"></script>
+	<script type="text/javascript" src="js/action.js"></script>
+</head>
+<body>
+		<!-- 头部开始 -->
+	<div class="header">
+    	<div class="header-box">
+    		<!-- user区 -->
+    		<ul class="user">
+	            <li class="login">
+	                <a href="login.html" target="_blank">登录</a>
+	                <div class="login-menu unlogin-menu">
+	                    <ul>
+	                        <li class="menu-uc"><span class="menu-icon"> </span><a href="/member/my" target="_blank">个人中心</a></li>
+	                        <li class="menu-fav"><span class="menu-icon"> </span><a href="/member/favourites" target="_blank">我的收藏</a></li>
+	                    </ul>
+	                </div>
+	            </li>
+	            <li class="m-line">|</li>
+	            <li class="register">
+	                <a href="register.html" target="_blank">注册</a>
+	            </li>
+	        </ul>
+	        <!-- service区 -->
+	        <ul class="service">
+	            <li class="exchange">
+	                <a id="select_currency" href="">参考汇率</a>
+						<ul class="exchange-menu">
+							<li id="tb-wish" class="tb-wish">
+								<span>1英镑=9人民币</span>
+								<span class="rate-help-anchor"></span>
+							</li>
+							<li id="rate-help-content" class="rate-help-content">
+								<b class="rate-help">RainbowTime 统一以英镑作为货币单位，站内所有人民价格及汇率仅供参考；顾客实际支付的金额以结算时支付机构的实时汇率为准。</b>
+							</li>
+						</ul>
+	            </li>
+	            <li id="kefu" class="kefu">
+	                <a href="" class="online-kf">在线客服</a>
+	            </li>
+	            <li class="shopping-cart">
+	                <a href="" target="_blank">购物车</a>
+	            </li>
+	            <li class="notification">
+	                <a href="" target="_blank">消费者告知书</a>
+	            </li>
+	        </ul>
+    	</div>
+    </div>
+	<!-- 头部结束 -->
+	
+    <!-- logo和搜索框开始 -->
+    <div class="logo-and-search">
+	    <div class="logo-inner">
+	        <a href="index.html" class="logo">
+	            <img width="320" alt="" src="image/logo.png">
+	        </a>
+	    </div>
+	</div>
+	<!-- logo和搜索框结束 -->
+	
+	<!-- 用户注册开始 -->
+	<div class="register-box box">
+		<div class="wrap">
+			<div class="register-l con-l">
+				
+			</div>
+			<div class="register-r con-r">
+				<form action="" class="register-form form">
+					<h3>欢迎注册</h3>
+					<span style="display:block;float:right;color:#999">已有账号？立即 <a href="login.html" style="color:#ff7200">登录</a> ></span>
+					<div class="account clearfix">
+						<span class="title">手机号/邮箱</span>
+						<input type="text" id="account" name="account" placeholder="请输入常用的手机号/邮箱" class="input-acc" maxlength="25">
+					</div>
+					<p class="account-error error"></p>
+					<div class="code" style="width:235px;">
+						<span class="title">验证码</span>
+						<input type="text" name="code" id="code" placeholder="请输入验证码"  class="input-code" maxlength="8" style="width: 133px;float: right;">
+					</div>
+					<input type="submit" class="get-code" value="获取验证码" title="获取验证码">
+					<p class="code-error error"></p>
+					<div class="password">
+						<span class="title">密码</span>
+						<input type="password" id="password" name="password" placeholder="6-20位字符、由数字和字母组合" class="input-pwd" maxlength="25">
+					</div>
+					<p class="password-error error"></p>
+					<div class="repassword">
+						<span class="title">确认密码</span>
+						<input type="repassword" id="repassword" name="repassword" placeholder="请输入确认密码" class="input-repwd" maxlength="25">
+					</div>
+					<p class="repassword-error error"></p>
+					<span class="check"><input type="checkbox">是的，我已阅读并同意<a href="">《服务条款》</a> 及 <a href="">《隐私条款》</a></span>
+					<input type="submit" class="register-btn btn" value="点击注册" title="注册">
+				</form>
+			</div>
+		</div>
+	</div>
+	<!-- 用户注册结束 -->
+
+    <p style="text-align: center">rainbowtime.com © 2005-2019. All rights reserved.</p>
+</body>
+</html>

@@ -1,0 +1,367 @@
+.main {
+    width: 1190px;
+    margin: 0 auto;
+}
+.main .wrap {
+    position: relative;
+    padding-left: 3px;
+    outline: 1px solid #e6e6e6;
+    outline-offset: -1px;
+    background-color: #fff;
+}
+.main .wrap .line {
+    padding-top: 5px;
+    line-height: 2.5;
+    color: #333;
+    border-bottom: 1px dashed #e6e6e6;
+    position: relative;
+}
+.wrap .line .key {
+    float: left;
+    width: 5em;
+    height: 26px;
+    line-height: 26px;
+    margin-left: 16px;
+    text-align: left;
+    color: #999;
+    overflow: hidden;
+}
+.wrap .line .value {
+    padding-left: 107px;
+}
+
+.wrap .line .value ul {
+    line-height: 26px;
+}
+.wrap .line .value ul li {
+    display: inline-block;
+    height: 26px;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 0 8px;
+    margin-right: 10px;
+    margin-bottom: 5px;
+    cursor: pointer;
+    border: 1px solid transparent;
+    vertical-align: top;
+}
+.wrap .line .value ul li:hover {
+    text-decoration: underline;
+}
+/*.wrap .line .action {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding-right: 14px;
+}
+.wrap .line .mult {
+    border: 1px solid #ddd;
+    width: 40px;
+}
+.wrap .line .mult:hover {
+    border-color: #000;
+}
+.wrap .line .mult, .wrap .line .more {
+    display: inline-block;
+    height: 2em;
+    padding: 0 8px;
+    line-height: 2em;
+    vertical-align: top;
+    margin-top: 8px;
+    position: relative;
+    margin-right: 8px;
+}
+.wrap .line .mult .arrow{
+	position: absolute;
+    top: 7px;
+    right: 6px;
+    content: "";
+    width: 10px;
+    height: 10px;
+    background: url(../image/icon/mult.svg) no-repeat;
+    background-size:10px;
+    transform: rotate(0);
+    transition: transform .2s ease-in-out;
+}
+.wrap .line .more .arrow{
+	position: absolute;
+    top: 6px;
+    right: -10px;
+    content: "";
+    width: 12px;
+    height: 12px;
+    background: url(../image/icon/more.svg) no-repeat;
+    background-size:12px;
+    transform: rotate(0);
+    transition: transform .2s ease-in-out;
+}
+.wrap .line .mult:hover .arrow, .wrap .line .more:hover .arrow{
+	transform: rotate(180deg);
+}*/
+
+.sort-con {
+    padding-right: 20px;
+    margin-top: 20px;
+    margin-bottom: 12px;
+    border: 1px solid #e7e7e7;
+    overflow: hidden;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.sort-con .sort {
+    position: relative;
+    width: 88px;
+    height: 38px;
+    border: 1px solid transparent;
+    line-height: 38px;
+    float: left;
+    cursor: pointer;
+}
+.sort-con .sort.active {
+    color: #000;
+    border-color: #000;
+}
+.sort-con .sort:after {
+    content: "";
+    position: absolute;
+    top: 2px;
+    right: -1px;
+    width: 1px;
+    height: 34px;
+    background-color: #eee;
+}
+.sort-con .sort.active:after {
+    display:none !important;
+}
+.sort-con .sort span {
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    vertical-align: top;
+}
+.sort-con .sort .icon-arrow {
+    display: inline-block;
+    margin-left: 4px;
+    margin-bottom: -1px;
+    width: 10px;
+    height: 10px;
+    background: url(../image/icon/up-down-arrow.svg) no-repeat;
+	background-size:10px;
+}
+.sort-con .price-box {
+    line-height: 38px;
+    margin-left: 18px;
+    display: inline-block;
+}
+.sort-con .price-box .input-price {
+    width: 42px;
+    height: 18px;
+    padding: 0 5px;
+    line-height: 18px;
+    border: 1px solid #ddd;
+}
+.sort-con .price-box .p-button {
+    display: inline-block;
+    width: 44px;
+    height: 20px;
+    padding: 0;
+    margin-left: 12px;
+    line-height: 20px;
+    color: #fff;
+    border: none;
+    background-color: #000;
+}
+.sort-con .page-box {
+    float: right;
+    padding: 9px 0;
+    line-height: 20px;
+    color: #a7a7a7;
+}
+.sort-con .page-box div{
+	display: inline-block;
+}
+.sort-con .page-box i {
+    font-style: normal;
+    color: #333;
+}
+.sort-con .page-box .current-page {
+    display: inline-block;
+    margin: 0 18px;
+}
+.sort-con .page-box .prev, .sort-con .page-box .next {
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    text-align: center;
+    border: 1px solid #ddd;
+    cursor: pointer;
+    vertical-align: top;
+    position: relative;
+}
+.sort-con .page-box .prev .arrow {
+	position: absolute;
+	top: 3px;
+    left: 3px;
+	width: 12px;
+	height: 12px;
+    background: url(../image/icon/arrow-.svg) no-repeat;
+    background-size: 12px;
+}
+.sort-con .page-box .next .arrow {
+	position: absolute;
+	top: 3px;
+    left: 3px;
+	width: 12px;
+	height: 12px;
+    background: url(../image/icon/arrow-.svg) no-repeat;
+    background-size: 12px;
+    transform: rotate(180deg);
+}
+
+.product-list .pro-panel {
+    width: 287px;
+    height: 416px;
+    margin: 0 9px 14px 0;
+    position: relative;
+    display: inline-block;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    vertical-align: top;
+    box-shadow: 0 0 5px rgba(0,0,0,.2);
+    border: 1px solid #fff;
+    transition: border .4s ease-in-out;
+    overflow: hidden;
+}
+.product-list .pro-panel:nth-child(4n) {
+    margin-right: 0;
+}
+.product-list .pro-panel:hover {
+	border: 1px solid #000;
+}
+.product-list .pro-panel img {
+    display: inline-block;
+    width: 248px;
+    height: 248px;
+    vertical-align: top;
+}
+.pro-panel img, .pro-price, .pro-name, .pro-sale, .pro-warehouse, .pro-action{
+    padding-right: 20px;
+    padding-left: 20px;
+}
+.pro-panel .pro-price .price {
+    position: relative;
+    height: 1em;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 1;
+    vertical-align: top;
+    color: #d72245;
+}
+.pro-price .price i {
+    font-size: 60%;
+    font-style: normal;
+}
+.pro-price .price .p-off {
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 6px;
+    min-width: 43px;
+    padding: 0 .5em;
+    font-size: 12px;
+    line-height: 1.3;
+    border: 1px dashed;
+    color: #d72245;
+    font-weight: 400;
+}
+.pro-price .price .p-original {
+	font-size: 12px;
+	font-weight: normal;
+    float: right;
+    margin-top: 4px;
+    color: #999;
+    text-decoration: line-through;
+}
+.pro-price .reference {
+    height: 1em;
+    margin-top: 11px;
+    line-height: 1;
+    color: #999;
+}
+.new{
+    color: #d72245;
+    font-weight: bold;
+}
+.pro-name {
+    height: 38px;
+    margin: 10px 0;
+    white-space: normal;
+    display: -webkit-box;
+    display: -moz-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    line-height: 19px;
+    color: #333;
+    overflow: hidden;
+}
+.p-sale {
+    display: inline-block;
+    padding: 0 .5em;
+    color: #fff;
+    font-size: 12px;
+    line-height: 18px;
+    height: 18px;
+    overflow: hidden;
+    margin-right: 3px;
+    background: #d72245;
+}
+.pro-warehouse {
+    height: 1em;
+    margin: 12px 0 0;
+    line-height: 1;
+    color: #999;
+}
+.pro-action .btn {
+    display: none;
+    width: 20px;
+    height: 20px;
+    background: url(../image/icon/fav1.svg) no-repeat;
+    background-size: 20px;
+    cursor: pointer;
+    margin-top: 10px;
+    position: absolute;
+    right: 30px;
+    bottom: 30px;
+}
+.pro-panel:hover .pro-action .btn{
+	display: inline-block;
+}
+.pro-panel .pro-action .btn:hover{
+	background: url(../image/icon/fav1-.svg) no-repeat;
+}
+
+.page-con{
+	line-height: 26px;
+    display: inline-block;
+    float: right;
+    margin-top: 20px;
+}
+.page-con .page {
+    float: left;
+    width: 30px;
+    height: 28px;
+    border: 1px solid #ececec;
+    cursor: pointer;
+    text-align: center;
+    margin: 0 5px;
+}
+.page-con .page.prev-page, .page-con .page.next-page {
+    width: 48px;
+}
+.page-con .page.active {
+    background: #000;
+    color: #fff;
+}
+.page-con .page:hover {
+    border-color: #000;
+}

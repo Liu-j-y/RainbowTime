@@ -1,0 +1,197 @@
+.main {
+    width: 1190px;
+    margin: 0 auto;
+}
+.sharing-hot{
+    margin: 40px 0; 
+    height: 440px;
+    border-bottom: 1px dashed #999;
+}
+.sharing-hot .text-con {
+    float: left;
+    width: 550px;
+    margin-top: 10px;
+}
+.sharing-hot .text-con .user-info .userPic {
+    width: 40px;
+    height: 40px;
+    border-radius: 50px;
+    float: left;
+}
+.sharing-hot .text-con .user-info .username {
+    font-size: 16px;
+    line-height: 40px;
+    color: #000;
+}
+.sharing-hot .text-con .user-info .follow a {
+    width: 50px;
+    height: 20px;
+    font-size: 14px;
+    border: 1px solid #d72245;
+    color: #d72245;
+    border-radius: 10px;
+    margin-top: 10px;
+    margin-left: 10px;
+    float: left;
+    text-align: center;
+    cursor: pointer;
+}
+.sharing-hot .text-con h2 {
+    clear: both;
+    padding-top: 20px;
+    font-size: 18px;
+    color: #ff7200;
+}
+.sharing-hot .text-con .text {
+    font-size: 16px;
+    color: #333;
+    height: 210px;
+    white-space: normal;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 10;
+    overflow: hidden;
+}
+.sharing-hot .text-con .about {
+    width: 80px;
+    margin-top: 30px;
+    padding: 5px 10px;
+    background: #EDF1F7;
+    border-radius: 50px;
+    color: #5E8EEA;
+    font-weight: 600;
+}
+.sharing-hot .text-con .about .icon {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: #5E8EEA;
+    padding: 0 4px;
+    color: #fff;
+    font-weight: 600;
+    margin-right: 5px;
+}
+.sharing-hot .text-con .date {
+    margin-top: 10px;
+    color: #999;
+}
+.sharing-hot .img-con {
+    float: right;
+}
+.sharing-hot .major-img {
+    width: 400px;
+    height: 400px;
+    overflow: hidden;
+    float: left;
+    margin-right: 6px;
+}
+.sharing-hot .major-img img {
+    width: 100%;
+    height: auto;
+    margin-top:-60px;
+}
+.sharing-hot .major-img {
+    width: 400px;
+    height: 400px;
+    overflow: hidden;
+}
+.sharing-hot .major-img img {
+    width: 100%;
+    height: auto;
+    margin-top:-60px;
+}
+.sharing-hot .minor-img {
+    float: left;
+}
+.sharing-hot .minor-img li {
+    width: 197px;
+    height: 197px;
+    overflow: hidden;
+}
+.sharing-hot .minor-img li:first-child {
+    margin-bottom: 6px;
+}
+.sharing-hot .minor-img li img {
+    width: 100%;
+    height: auto;
+    margin-top:-40px;
+}
+
+.sharing-list {
+    clear: both;
+}
+.sharing-list ul {
+    float: left;
+    margin-right: 12px;
+}
+.sharing-list  ul:last-child {
+    margin-right: 0;
+}
+.sharing-list .sharing-panel {
+    width: 270px;
+    padding: 8px;
+    margin-bottom: 12px;
+    box-shadow: 0 0 5px rgba(0,0,0,.2);
+    border: 1px solid #fff;
+    transition: border .4s ease-in-out;
+    cursor: pointer;
+    clear: both;
+}
+.sharing-list .sharing-panel:hover {
+    border: 1px solid #000;
+}
+.sharing-list .img-box {
+    height: 350px;
+    overflow: hidden;
+}
+.sharing-list .img-box .sharing-img {
+    width: 100%;
+    height: auto;
+}
+.sharing-list .title {
+    font-size: 16px;
+    white-space: normal;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+    overflow: hidden;
+    padding: 0 5px;
+}
+.user-and-like{
+    height: 20px;
+    margin-bottom: 10px;
+    padding: 0 5px;
+}
+.user-info .userPic {
+    width: 25px;
+    height: 25px;
+    border-radius: 50px;
+    float: left;
+}
+.user-info .username {
+    font-size: 14px;
+    color: #666;
+    line-height: 25px;
+    margin-left: 10px;
+    float: left;
+}
+.like {
+    float: right;
+}
+.like .icon {
+    width: 20px;
+    height: 20px;
+    background: url(../image/icon/ulike.svg) no-repeat;
+    background-size: 20px;
+    float: left;
+}
+.like .icon:hover {
+    background: url(../image/icon/ulike-.svg) no-repeat;
+    background-size: 20px;
+}
+.like span {
+    float: left;
+    margin-left: 5px;
+    font-size: 14px;
+    color: #666;
+}

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>LOGIN / 登录</title>
+	<link rel="stylesheet" href="css/base.css">
+	<link rel="stylesheet" href="css/action.css">
+	<script type="text/javascript" src="js/jquery-3.4.1.js"></script>
+	<script type="text/javascript" src="js/base.js"></script>
+	<script type="text/javascript" src="js/action.js"></script>
+</head>
+<body>
+	<!-- 头部开始 -->
+	<div class="header">
+    	<div class="header-box">
+    		<!-- user区 -->
+    		<ul class="user">
+	            <li class="login">
+	                <a href="login.html" target="_blank">登录</a>
+	                <div class="login-menu unlogin-menu">
+	                    <ul>
+	                        <li class="menu-uc"><span class="menu-icon"> </span><a href="/member/my" target="_blank">个人中心</a></li>
+	                        <li class="menu-fav"><span class="menu-icon"> </span><a href="/member/favourites" target="_blank">我的收藏</a></li>
+	                    </ul>
+	                </div>
+	            </li>
+	            <li class="m-line">|</li>
+	            <li class="register">
+	                <a href="register.html" target="_blank">注册</a>
+	            </li>
+	        </ul>
+	        <!-- service区 -->
+	        <ul class="service">
+	            <li class="exchange">
+	                <a id="select_currency" href="">参考汇率</a>
+						<ul class="exchange-menu">
+							<li id="tb-wish" class="tb-wish">
+								<span>1英镑=9人民币</span>
+								<span class="rate-help-anchor"></span>
+							</li>
+							<li id="rate-help-content" class="rate-help-content">
+								<b class="rate-help">RainbowTime 统一以英镑作为货币单位，站内所有人民价格及汇率仅供参考；顾客实际支付的金额以结算时支付机构的实时汇率为准。</b>
+							</li>
+						</ul>
+	            </li>
+	            <li id="kefu" class="kefu">
+	                <a href="" class="online-kf">在线客服</a>
+	            </li>
+	            <li class="shopping-cart">
+	                <a href="" target="_blank">购物车</a>
+	            </li>
+	            <li class="notification">
+	                <a href="" target="_blank">消费者告知书</a>
+	            </li>
+	        </ul>
+    	</div>
+    </div>
+	<!-- 头部结束 -->
+	
+    <!-- logo和搜索框开始 -->
+    <div class="logo-and-search">
+	    <div class="logo-inner">
+	        <a href="index.html" class="logo">
+	            <img width="320" alt="" src="image/logo.png">
+	        </a>
+	    </div>
+	</div>
+	<!-- logo和搜索框结束 -->
+	
+	<!-- 用户登录开始 -->
+	<div class="login-box box">
+		<div class="wrap">
+			<div class="login-l con-l">
+				
+			</div>
+			<div class="login-r con-r">
+				<form action="" class="login-form form">
+					<h3>用户登录</h3>
+					<span style="display:block;float:right;color:#999">
+						立即<a href="register.html" style="color:#ff7200">注册</a> >
+					</span>
+					<div class="account clearfix">
+						<div class="icon"></div>
+						<input type="text" id="account" name="account" placeholder="手机号/用户名/邮箱" class="input-acc" maxlength="25">
+					</div>
+					<p class="account-error error"></p>
+					<div class="password">
+						<div class="icon"></div>
+						<input type="password" id="password" name="password" placeholder="密码" class="input-pwd" maxlength="25">
+					</div>
+					<p class="password-error error"></p>
+					<p class="forget-password"><a href="" style="color:#999">忘记密码？</a></p>
+					<input type="submit" class="login-btn btn" value="点击登录" title="登录">
+					<div class="quick-login">
+						<span>快捷登录方式</span><img src="image/icon/login-wechat.svg"><img src="image/icon/login-qq.svg"><img src="image/icon/login-zfb.svg">
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+	<!-- 用户登录结束 -->
+
+    <p style="text-align: center">rainbowtime.com © 2005-2019. All rights reserved.</p>
+</body>
+</html>

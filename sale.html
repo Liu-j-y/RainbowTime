@@ -1,0 +1,777 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>SALE / 优惠专区</title>
+	<link rel="stylesheet" href="css/base.css">
+	<link rel="stylesheet" href="css/sale.css">
+	<script type="text/javascript" src="js/jquery-3.4.1.js"></script>
+	<script type="text/javascript" src="js/base.js"></script>
+</head>
+<body>
+	<!-- 头部开始 -->
+	<div class="header">
+    	<div class="header-box">
+    		<!-- user区 -->
+    		<ul class="user">
+	            <li class="login">
+	                <a href="login.html" target="_blank">登录</a>
+	                <div class="login-menu unlogin-menu">
+	                    <ul>
+	                        <li class="menu-uc"><span class="menu-icon"> </span><a href="/member/my" target="_blank">个人中心</a></li>
+	                        <li class="menu-fav"><span class="menu-icon"> </span><a href="/member/favourites" target="_blank">我的收藏</a></li>
+	                    </ul>
+	                </div>
+	            </li>
+	            <li class="m-line">|</li>
+	            <li class="register">
+	                <a href="register.html" target="_blank">注册</a>
+	            </li>
+	        </ul>
+	        <!-- service区 -->
+	        <ul class="service">
+	            <li class="exchange">
+	                <a id="select_currency" href="">参考汇率</a>
+						<ul class="exchange-menu">
+							<li id="tb-wish" class="tb-wish">
+								<span>1英镑=9人民币</span>
+								<span class="rate-help-anchor"></span>
+							</li>
+							<li id="rate-help-content" class="rate-help-content">
+								<b class="rate-help">RainbowTime 统一以英镑作为货币单位，站内所有人民价格及汇率仅供参考；顾客实际支付的金额以结算时支付机构的实时汇率为准。</b>
+							</li>
+						</ul>
+	            </li>
+	            <li id="kefu" class="kefu">
+	                <a href="" class="online-kf">在线客服</a>
+	            </li>
+	            <li class="shopping-cart">
+	                <a href="" target="_blank">购物车</a>
+	            </li>
+	            <li class="notification">
+	                <a href="" target="_blank">消费者告知书</a>
+	            </li>
+	        </ul>
+    	</div>
+    </div>
+	<!-- 头部结束 -->
+	
+    <!-- logo和搜索框开始 -->
+    <div class="logo-and-search">
+	    <div class="logo-inner">
+	        <a href="index.html" class="logo">
+	            <img width="320" alt="" src="image/logo.png">
+	        </a>
+	        <form class="search-wrap search-focus">
+	            <div class="clearfix cmp-dropdownsearch">
+	                <input id="q" name="q" placeholder="YSL圣罗兰" data-value="YSL圣罗兰" class="search-bg input-keywords" type="text" autocomplete="off">
+	                <button type="button" class="btn-search" sel-id="header-btn-searchkw">搜索</button>
+	            </div>
+	        </form>
+	    </div>
+	</div>
+	<!-- logo和搜索框结束 -->
+
+	<!-- 导航栏开始 -->
+	<div class="nav">
+        <div class="nav-inner">
+            <ul class="primary">
+                <li class="home"><a href="index.html">INDEX/首页</a></li>
+                <li class="shop"><a href="shop.html">SHOP/购物</a></li>
+                <li class="news"><a href="news.html">NEWS/新品速递</a></li>
+				<li class="sale hover active"><a href="sale.html">SALE/优惠专区</a></li>
+				<li class="sharing"><a href="sharing.html">SHARING/美物分享</a></li>
+            </ul>
+        </div>
+    </div>
+    <!-- 导航栏结束 -->
+
+    <img src="image/sale01.jpg" style="width:100%">
+    <div class="main">
+    	<div class="act-nav"><strong>活动</strong> <a href="#buy-free">买三免一</a><a href="#buy-off">大牌五折起</a><a href="#buy-brands">YSL圣罗兰活动专场</a></div>
+    	<div class="product-sale" id="buy-free">
+  			<div class="text-title">
+	            <a href="" target="_blank" class="text">买三免一专区<span class="more">查看更多&gt;&gt;</span></a>
+	        </div>
+  			<div class="product-list clearfix">
+				<ul>
+					<li class="product-panel">
+						<a href="" class="product-view">
+							<img src="image/product/p12.jpg" alt="">
+							<span class="tag-first">买三免一</span>
+						</a>
+						<h2 class="product-desc">
+				            <a class="product-link" href="" target="_blank" title="韩国爱茉莉espoir艾丝珀进口珍珠胶囊妆前乳隔离乳打底隔离保湿">	
+				            	韩国爱茉莉espoir艾丝珀进口珍珠胶囊妆前乳隔离乳打底隔离保湿
+				            </a>
+				        </h2>
+				        <div class="price-wrapper">
+				            <span class="price clearfix">
+					            <span class="discount-amount"></span>
+					            ￥159
+				            </span>
+				            <span class="old-price"></span>
+				            <br><span class="p-reference">参考价：$25</span>
+			            </div>
+			             <div class="action"><a href="" class="btn">立即购买</a></div>
+					</li>
+					<li class="product-panel">
+						<a href="" class="product-view">
+							<img src="image/product/p13.jpg" alt="">
+							<span class="tag-first">买三免一</span>
+						</a>
+						<h2 class="product-desc">
+				            <a class="product-link" href="" target="_blank" title="dermafirm/德妃紫苏隔离霜妆前乳防30g提亮肤色韩国遮瑕控油打底">	
+				            	dermafirm/德妃紫苏隔离霜妆前乳防30g提亮肤色韩国遮瑕控油打底
+				            </a>
+				        </h2>
+				        <div class="price-wrapper">
+				            <span class="price clearfix">
+					            <span class="discount-amount"></span>
+					            ￥159
+				            </span>
+				            <span class="old-price"></span>
+				            <br><span class="p-reference">参考价：$25</span>
+			            </div>
+			             <div class="action"><a href="" class="btn">立即购买</a></div>
+					</li>
+					<li class="product-panel">
+						<a href="" class="product-view">
+							<img src="image/product/p12.jpg" alt="">
+							<span class="tag-first">买三免一</span>
+						</a>
+						<h2 class="product-desc">
+				            <a class="product-link" href="" target="_blank" title="韩国爱茉莉espoir艾丝珀进口珍珠胶囊妆前乳隔离乳打底隔离保湿">	
+				            	韩国爱茉莉espoir艾丝珀进口珍珠胶囊妆前乳隔离乳打底隔离保湿
+				            </a>
+				        </h2>
+				        <div class="price-wrapper">
+				            <span class="price clearfix">
+					            <span class="discount-amount"></span>
+					            ￥159
+				            </span>
+				            <span class="old-price"></span>
+				            <br><span class="p-reference">参考价：$25</span>
+			            </div>
+			             <div class="action"><a href="" class="btn">立即购买</a></div>
+					</li>
+					<li class="product-panel">
+						<a href="" class="product-view">
+							<img src="image/product/p13.jpg" alt="">
+							<span class="tag-first">买三免一</span>
+						</a>
+						<h2 class="product-desc">
+				            <a class="product-link" href="" target="_blank" title="dermafirm/德妃紫苏隔离霜妆前乳防30g提亮肤色韩国遮瑕控油打底">	
+				            	dermafirm/德妃紫苏隔离霜妆前乳防30g提亮肤色韩国遮瑕控油打底
+				            </a>
+				        </h2>
+				        <div class="price-wrapper">
+				            <span class="price clearfix">
+					            <span class="discount-amount"></span>
+					            ￥159
+				            </span>
+				            <span class="old-price"></span>
+				            <br><span class="p-reference">参考价：$25</span>
+			            </div>
+			             <div class="action"><a href="" class="btn">立即购买</a></div>
+					</li>
+					<li class="product-panel">
+						<a href="" class="product-view">
+							<img src="image/product/p12.jpg" alt="">
+							<span class="tag-first">买三免一</span>
+						</a>
+						<h2 class="product-desc">
+				            <a class="product-link" href="" target="_blank" title="韩国爱茉莉espoir艾丝珀进口珍珠胶囊妆前乳隔离乳打底隔离保湿">	
+				            	韩国爱茉莉espoir艾丝珀进口珍珠胶囊妆前乳隔离乳打底隔离保湿
+				            </a>
+				        </h2>
+				        <div class="price-wrapper">
+				            <span class="price clearfix">
+					            <span class="discount-amount"></span>
+					            ￥159
+				            </span>
+				            <span class="old-price"></span>
+				            <br><span class="p-reference">参考价：$25</span>
+			            </div>
+			             <div class="action"><a href="" class="btn">立即购买</a></div>
+					</li>
+					<li class="product-panel">
+						<a href="" class="product-view">
+							<img src="image/product/p13.jpg" alt="">
+							<span class="tag-first">买三免一</span>
+						</a>
+						<h2 class="product-desc">
+				            <a class="product-link" href="" target="_blank" title="dermafirm/德妃紫苏隔离霜妆前乳防30g提亮肤色韩国遮瑕控油打底">	
+				            	dermafirm/德妃紫苏隔离霜妆前乳防30g提亮肤色韩国遮瑕控油打底
+				            </a>
+				        </h2>
+				        <div class="price-wrapper">
+				            <span class="price clearfix">
+					            <span class="discount-amount"></span>
+					            ￥159
+				            </span>
+				            <span class="old-price"></span>
+				            <br><span class="p-reference">参考价：$25</span>
+			            </div>
+			             <div class="action"><a href="" class="btn">立即购买</a></div>
+					</li>
+					<li class="product-panel">
+						<a href="" class="product-view">
+							<img src="image/product/p12.jpg" alt="">
+							<span class="tag-first">买三免一</span>
+						</a>
+						<h2 class="product-desc">
+				            <a class="product-link" href="" target="_blank" title="韩国爱茉莉espoir艾丝珀进口珍珠胶囊妆前乳隔离乳打底隔离保湿">	
+				            	韩国爱茉莉espoir艾丝珀进口珍珠胶囊妆前乳隔离乳打底隔离保湿
+				            </a>
+				        </h2>
+				        <div class="price-wrapper">
+				            <span class="price clearfix">
+					            <span class="discount-amount"></span>
+					            ￥159
+				            </span>
+				            <span class="old-price"></span>
+				            <br><span class="p-reference">参考价：$25</span>
+			            </div>
+			             <div class="action"><a href="" class="btn">立即购买</a></div>
+					</li>
+					<li class="product-panel">
+						<a href="" class="product-view">
+							<img src="image/product/p13.jpg" alt="">
+							<span class="tag-first">买三免一</span>
+						</a>
+						<h2 class="product-desc">
+				            <a class="product-link" href="" target="_blank" title="dermafirm/德妃紫苏隔离霜妆前乳防30g提亮肤色韩国遮瑕控油打底">	
+				            	dermafirm/德妃紫苏隔离霜妆前乳防30g提亮肤色韩国遮瑕控油打底
+				            </a>
+				        </h2>
+				        <div class="price-wrapper">
+				            <span class="price clearfix">
+					            <span class="discount-amount"></span>
+					            ￥159
+				            </span>
+				            <span class="old-price"></span>
+				            <br><span class="p-reference">参考价：$25</span>
+			            </div>
+			             <div class="action"><a href="" class="btn">立即购买</a></div>
+					</li>
+					<li class="product-panel">
+						<a href="" class="product-view">
+							<img src="image/product/p12.jpg" alt="">
+							<span class="tag-first">买三免一</span>
+						</a>
+						<h2 class="product-desc">
+				            <a class="product-link" href="" target="_blank" title="韩国爱茉莉espoir艾丝珀进口珍珠胶囊妆前乳隔离乳打底隔离保湿">	
+				            	韩国爱茉莉espoir艾丝珀进口珍珠胶囊妆前乳隔离乳打底隔离保湿
+				            </a>
+				        </h2>
+				        <div class="price-wrapper">
+				            <span class="price clearfix">
+					            <span class="discount-amount"></span>
+					            ￥159
+				            </span>
+				            <span class="old-price"></span>
+				            <br><span class="p-reference">参考价：$25</span>
+			            </div>
+			             <div class="action"><a href="" class="btn">立即购买</a></div>
+					</li>
+					<li class="product-panel">
+						<a href="" class="product-view">
+							<img src="image/product/p13.jpg" alt="">
+							<span class="tag-first">买三免一</span>
+						</a>
+						<h2 class="product-desc">
+				            <a class="product-link" href="" target="_blank" title="dermafirm/德妃紫苏隔离霜妆前乳防30g提亮肤色韩国遮瑕控油打底">	
+				            	dermafirm/德妃紫苏隔离霜妆前乳防30g提亮肤色韩国遮瑕控油打底
+				            </a>
+				        </h2>
+				        <div class="price-wrapper">
+				            <span class="price clearfix">
+					            <span class="discount-amount"></span>
+					            ￥159
+				            </span>
+				            <span class="old-price"></span>
+				            <br><span class="p-reference">参考价：$25</span>
+			            </div>
+			             <div class="action"><a href="" class="btn">立即购买</a></div>
+					</li>
+				</ul>
+	  		</div>
+		</div>
+		<div class="product-sale" id="buy-off">
+  			<div class="text-title">
+	            <a href="" target="_blank" class="text">大牌五折起专区<span class="more">查看更多&gt;&gt;</span></a>
+	        </div>
+  			<div class="product-list clearfix">
+				<ul>
+					<li class="product-panel">
+						<a href="" class="product-view">
+							<img src="image/product/p14.jpg" alt="">
+							<span class="tag-first">50%OFF</span>
+						</a>
+						<h2 class="product-desc">
+				            <a class="product-link" href="" target="_blank" title="法国Dior迪奥进口999口红烈焰蓝金唇膏口红047/787/766滋润保湿">	
+				            	法国Dior迪奥进口999口红烈焰蓝金唇膏口红047/787/766滋润保湿
+				            </a>
+				        </h2>
+				        <div class="price-wrapper">
+				            <span class="price clearfix">
+					            <span class="discount-amount"></span>
+					            ￥125
+				            </span>
+				            <span class="old-price">￥250</span>
+				            <br><span class="p-reference">参考价：$50</span>
+			            </div>
+			             <div class="action"><a href="" class="btn">立即购买</a></div>
+					</li>
+					<li class="product-panel">
+						<a href="" class="product-view">
+							<img src="image/product/p15.jpg" alt="">
+							<span class="tag-first">50%OFF</span>
+						</a>
+						<h2 class="product-desc">
+				            <a class="product-link" href="" target="_blank" title="日本CPB肌肤之钥柔肤高光提亮粉定妆修饰肤色散粉蜜粉持久控油">	
+				            	日本CPB肌肤之钥柔肤高光提亮粉定妆修饰肤色散粉蜜粉持久控油
+				            </a>
+				        </h2>
+				        <div class="price-wrapper">
+				            <span class="price clearfix">
+					            <span class="discount-amount"></span>
+					            ￥250
+				            </span>
+				            <span class="old-price">￥500</span>
+				            <br><span class="p-reference">参考价：$80</span>
+			            </div>
+			             <div class="action"><a href="" class="btn">立即购买</a></div>
+					</li>
+					<li class="product-panel">
+						<a href="" class="product-view">
+							<img src="image/product/p14.jpg" alt="">
+							<span class="tag-first">50%OFF</span>
+						</a>
+						<h2 class="product-desc">
+				            <a class="product-link" href="" target="_blank" title="法国Dior迪奥进口999口红烈焰蓝金唇膏口红047/787/766滋润保湿">	
+				            	法国Dior迪奥进口999口红烈焰蓝金唇膏口红047/787/766滋润保湿
+				            </a>
+				        </h2>
+				        <div class="price-wrapper">
+				            <span class="price clearfix">
+					            <span class="discount-amount"></span>
+					            ￥125
+				            </span>
+				            <span class="old-price">￥250</span>
+				            <br><span class="p-reference">参考价：$50</span>
+			            </div>
+			             <div class="action"><a href="" class="btn">立即购买</a></div>
+					</li>
+					<li class="product-panel">
+						<a href="" class="product-view">
+							<img src="image/product/p15.jpg" alt="">
+							<span class="tag-first">50%OFF</span>
+						</a>
+						<h2 class="product-desc">
+				            <a class="product-link" href="" target="_blank" title="日本CPB肌肤之钥柔肤高光提亮粉定妆修饰肤色散粉蜜粉持久控油">	
+				            	日本CPB肌肤之钥柔肤高光提亮粉定妆修饰肤色散粉蜜粉持久控油
+				            </a>
+				        </h2>
+				        <div class="price-wrapper">
+				            <span class="price clearfix">
+					            <span class="discount-amount"></span>
+					            ￥250
+				            </span>
+				            <span class="old-price">￥500</span>
+				            <br><span class="p-reference">参考价：$80</span>
+			            </div>
+			             <div class="action"><a href="" class="btn">立即购买</a></div>
+					</li>
+					<li class="product-panel">
+						<a href="" class="product-view">
+							<img src="image/product/p14.jpg" alt="">
+							<span class="tag-first">50%OFF</span>
+						</a>
+						<h2 class="product-desc">
+				            <a class="product-link" href="" target="_blank" title="法国Dior迪奥进口999口红烈焰蓝金唇膏口红047/787/766滋润保湿">	
+				            	法国Dior迪奥进口999口红烈焰蓝金唇膏口红047/787/766滋润保湿
+				            </a>
+				        </h2>
+				        <div class="price-wrapper">
+				            <span class="price clearfix">
+					            <span class="discount-amount"></span>
+					            ￥125
+				            </span>
+				            <span class="old-price">￥250</span>
+				            <br><span class="p-reference">参考价：$50</span>
+			            </div>
+			             <div class="action"><a href="" class="btn">立即购买</a></div>
+					</li>
+					<li class="product-panel">
+						<a href="" class="product-view">
+							<img src="image/product/p15.jpg" alt="">
+							<span class="tag-first">50%OFF</span>
+						</a>
+						<h2 class="product-desc">
+				            <a class="product-link" href="" target="_blank" title="日本CPB肌肤之钥柔肤高光提亮粉定妆修饰肤色散粉蜜粉持久控油">	
+				            	日本CPB肌肤之钥柔肤高光提亮粉定妆修饰肤色散粉蜜粉持久控油
+				            </a>
+				        </h2>
+				        <div class="price-wrapper">
+				            <span class="price clearfix">
+					            <span class="discount-amount"></span>
+					            ￥250
+				            </span>
+				            <span class="old-price">￥500</span>
+				            <br><span class="p-reference">参考价：$80</span>
+			            </div>
+			             <div class="action"><a href="" class="btn">立即购买</a></div>
+					</li>
+					<li class="product-panel">
+						<a href="" class="product-view">
+							<img src="image/product/p14.jpg" alt="">
+							<span class="tag-first">50%OFF</span>
+						</a>
+						<h2 class="product-desc">
+				            <a class="product-link" href="" target="_blank" title="法国Dior迪奥进口999口红烈焰蓝金唇膏口红047/787/766滋润保湿">	
+				            	法国Dior迪奥进口999口红烈焰蓝金唇膏口红047/787/766滋润保湿
+				            </a>
+				        </h2>
+				        <div class="price-wrapper">
+				            <span class="price clearfix">
+					            <span class="discount-amount"></span>
+					            ￥125
+				            </span>
+				            <span class="old-price">￥250</span>
+				            <br><span class="p-reference">参考价：$50</span>
+			            </div>
+			             <div class="action"><a href="" class="btn">立即购买</a></div>
+					</li>
+					<li class="product-panel">
+						<a href="" class="product-view">
+							<img src="image/product/p15.jpg" alt="">
+							<span class="tag-first">50%OFF</span>
+						</a>
+						<h2 class="product-desc">
+				            <a class="product-link" href="" target="_blank" title="日本CPB肌肤之钥柔肤高光提亮粉定妆修饰肤色散粉蜜粉持久控油">	
+				            	日本CPB肌肤之钥柔肤高光提亮粉定妆修饰肤色散粉蜜粉持久控油
+				            </a>
+				        </h2>
+				        <div class="price-wrapper">
+				            <span class="price clearfix">
+					            <span class="discount-amount"></span>
+					            ￥250
+				            </span>
+				            <span class="old-price">￥500</span>
+				            <br><span class="p-reference">参考价：$80</span>
+			            </div>
+			             <div class="action"><a href="" class="btn">立即购买</a></div>
+					</li>
+					<li class="product-panel">
+						<a href="" class="product-view">
+							<img src="image/product/p14.jpg" alt="">
+							<span class="tag-first">50%OFF</span>
+						</a>
+						<h2 class="product-desc">
+				            <a class="product-link" href="" target="_blank" title="法国Dior迪奥进口999口红烈焰蓝金唇膏口红047/787/766滋润保湿">	
+				            	法国Dior迪奥进口999口红烈焰蓝金唇膏口红047/787/766滋润保湿
+				            </a>
+				        </h2>
+				        <div class="price-wrapper">
+				            <span class="price clearfix">
+					            <span class="discount-amount"></span>
+					            ￥125
+				            </span>
+				            <span class="old-price">￥250</span>
+				            <br><span class="p-reference">参考价：$50</span>
+			            </div>
+			             <div class="action"><a href="" class="btn">立即购买</a></div>
+					</li>
+					<li class="product-panel">
+						<a href="" class="product-view">
+							<img src="image/product/p15.jpg" alt="">
+							<span class="tag-first">50%OFF</span>
+						</a>
+						<h2 class="product-desc">
+				            <a class="product-link" href="" target="_blank" title="日本CPB肌肤之钥柔肤高光提亮粉定妆修饰肤色散粉蜜粉持久控油">	
+				            	日本CPB肌肤之钥柔肤高光提亮粉定妆修饰肤色散粉蜜粉持久控油
+				            </a>
+				        </h2>
+				        <div class="price-wrapper">
+				            <span class="price clearfix">
+					            <span class="discount-amount"></span>
+					            ￥250
+				            </span>
+				            <span class="old-price">￥500</span>
+				            <br><span class="p-reference">参考价：$80</span>
+			            </div>
+			             <div class="action"><a href="" class="btn">立即购买</a></div>
+					</li>
+				</ul>
+	  		</div>
+		</div>
+		<div class="product-sale" id="buy-brands">
+  			<div class="text-title">
+	            <a href="" target="_blank" class="text">YSL圣罗兰活动专区<span class="more">查看更多&gt;&gt;</span></a>
+	        </div>
+  			<div class="product-list clearfix">
+				<ul>
+					<li class="product-panel">
+						<a href="" class="product-view">
+							<img src="image/product/p01.jpg" alt="">
+							<span class="tag-first">2件93折</span>
+						</a>
+						<h2 class="product-desc">
+				            <a class="product-link" href="" target="_blank" title="【官方正品】YSL圣罗兰莹亮纯魅丰盈黑心唇膏 莹亮星钻唇膏">	
+				            	【官方正品】YSL圣罗兰莹亮纯魅丰盈黑心唇膏 莹亮星钻唇膏
+				            </a>
+				        </h2>
+				        <div class="price-wrapper">
+				            <span class="price clearfix">
+					            <span class="discount-amount"></span>
+					            ￥199
+				            </span>
+				            <span class="old-price"></span>
+				            <br><span class="p-reference">参考价：$22</span>
+			            </div>
+			             <div class="action"><a href="" class="btn">立即购买</a></div>
+					</li>
+					<li class="product-panel">
+						<a href="" class="product-view">
+							<img src="image/product/p11.jpg" alt="">
+							<span class="tag-first">3件5折</span>
+						</a>
+						<h2 class="product-desc">
+				            <a class="product-link" href="" target="_blank" title="【官方正品】YSL圣罗兰莹亮纯魅丰盈黑心唇膏 莹亮星钻唇膏">	
+				            	【官方正品】YSL圣罗兰莹亮纯魅丰盈黑心唇膏 莹亮星钻唇膏
+				            </a>
+				        </h2>
+				        <div class="price-wrapper">
+				            <span class="price clearfix">
+					            <span class="discount-amount"></span>
+					            ￥199
+				            </span>
+				            <span class="old-price"></span>
+				            <br><span class="p-reference">参考价：$22</span>
+			            </div>
+			             <div class="action"><a href="" class="btn">立即购买</a></div>
+					</li>
+					<li class="product-panel">
+						<a href="" class="product-view">
+							<img src="image/product/p01.jpg" alt="">
+							<span class="tag-first">2件93折</span>
+						</a>
+						<h2 class="product-desc">
+				            <a class="product-link" href="" target="_blank" title="【官方正品】YSL圣罗兰莹亮纯魅丰盈黑心唇膏 莹亮星钻唇膏">	
+				            	【官方正品】YSL圣罗兰莹亮纯魅丰盈黑心唇膏 莹亮星钻唇膏
+				            </a>
+				        </h2>
+				        <div class="price-wrapper">
+				            <span class="price clearfix">
+					            <span class="discount-amount"></span>
+					            ￥199
+				            </span>
+				            <span class="old-price"></span>
+				            <br><span class="p-reference">参考价：$22</span>
+			            </div>
+			             <div class="action"><a href="" class="btn">立即购买</a></div>
+					</li>
+					<li class="product-panel">
+						<a href="" class="product-view">
+							<img src="image/product/p11.jpg" alt="">
+							<span class="tag-first">3件5折</span>
+						</a>
+						<h2 class="product-desc">
+				            <a class="product-link" href="" target="_blank" title="【官方正品】YSL圣罗兰莹亮纯魅丰盈黑心唇膏 莹亮星钻唇膏">	
+				            	【官方正品】YSL圣罗兰莹亮纯魅丰盈黑心唇膏 莹亮星钻唇膏
+				            </a>
+				        </h2>
+				        <div class="price-wrapper">
+				            <span class="price clearfix">
+					            <span class="discount-amount"></span>
+					            ￥199
+				            </span>
+				            <span class="old-price"></span>
+				            <br><span class="p-reference">参考价：$22</span>
+			            </div>
+			             <div class="action"><a href="" class="btn">立即购买</a></div>
+					</li>
+					<li class="product-panel">
+						<a href="" class="product-view">
+							<img src="image/product/p01.jpg" alt="">
+							<span class="tag-first">2件93折</span>
+						</a>
+						<h2 class="product-desc">
+				            <a class="product-link" href="" target="_blank" title="【官方正品】YSL圣罗兰莹亮纯魅丰盈黑心唇膏 莹亮星钻唇膏">	
+				            	【官方正品】YSL圣罗兰莹亮纯魅丰盈黑心唇膏 莹亮星钻唇膏
+				            </a>
+				        </h2>
+				        <div class="price-wrapper">
+				            <span class="price clearfix">
+					            <span class="discount-amount"></span>
+					            ￥199
+				            </span>
+				            <span class="old-price"></span>
+				            <br><span class="p-reference">参考价：$22</span>
+			            </div>
+			             <div class="action"><a href="" class="btn">立即购买</a></div>
+					</li>
+					<li class="product-panel">
+						<a href="" class="product-view">
+							<img src="image/product/p11.jpg" alt="">
+							<span class="tag-first">3件5折</span>
+						</a>
+						<h2 class="product-desc">
+				            <a class="product-link" href="" target="_blank" title="【官方正品】YSL圣罗兰莹亮纯魅丰盈黑心唇膏 莹亮星钻唇膏">	
+				            	【官方正品】YSL圣罗兰莹亮纯魅丰盈黑心唇膏 莹亮星钻唇膏
+				            </a>
+				        </h2>
+				        <div class="price-wrapper">
+				            <span class="price clearfix">
+					            <span class="discount-amount"></span>
+					            ￥199
+				            </span>
+				            <span class="old-price"></span>
+				            <br><span class="p-reference">参考价：$22</span>
+			            </div>
+			             <div class="action"><a href="" class="btn">立即购买</a></div>
+					</li>
+					<li class="product-panel">
+						<a href="" class="product-view">
+							<img src="image/product/p01.jpg" alt="">
+							<span class="tag-first">2件93折</span>
+						</a>
+						<h2 class="product-desc">
+				            <a class="product-link" href="" target="_blank" title="【官方正品】YSL圣罗兰莹亮纯魅丰盈黑心唇膏 莹亮星钻唇膏">	
+				            	【官方正品】YSL圣罗兰莹亮纯魅丰盈黑心唇膏 莹亮星钻唇膏
+				            </a>
+				        </h2>
+				        <div class="price-wrapper">
+				            <span class="price clearfix">
+					            <span class="discount-amount"></span>
+					            ￥199
+				            </span>
+				            <span class="old-price"></span>
+				            <br><span class="p-reference">参考价：$22</span>
+			            </div>
+			             <div class="action"><a href="" class="btn">立即购买</a></div>
+					</li>
+					<li class="product-panel">
+						<a href="" class="product-view">
+							<img src="image/product/p11.jpg" alt="">
+							<span class="tag-first">3件5折</span>
+						</a>
+						<h2 class="product-desc">
+				            <a class="product-link" href="" target="_blank" title="【官方正品】YSL圣罗兰莹亮纯魅丰盈黑心唇膏 莹亮星钻唇膏">	
+				            	【官方正品】YSL圣罗兰莹亮纯魅丰盈黑心唇膏 莹亮星钻唇膏
+				            </a>
+				        </h2>
+				        <div class="price-wrapper">
+				            <span class="price clearfix">
+					            <span class="discount-amount"></span>
+					            ￥199
+				            </span>
+				            <span class="old-price"></span>
+				            <br><span class="p-reference">参考价：$22</span>
+			            </div>
+			             <div class="action"><a href="" class="btn">立即购买</a></div>
+					</li>
+					<li class="product-panel">
+						<a href="" class="product-view">
+							<img src="image/product/p01.jpg" alt="">
+							<span class="tag-first">2件93折</span>
+						</a>
+						<h2 class="product-desc">
+				            <a class="product-link" href="" target="_blank" title="【官方正品】YSL圣罗兰莹亮纯魅丰盈黑心唇膏 莹亮星钻唇膏">	
+				            	【官方正品】YSL圣罗兰莹亮纯魅丰盈黑心唇膏 莹亮星钻唇膏
+				            </a>
+				        </h2>
+				        <div class="price-wrapper">
+				            <span class="price clearfix">
+					            <span class="discount-amount"></span>
+					            ￥199
+				            </span>
+				            <span class="old-price"></span>
+				            <br><span class="p-reference">参考价：$22</span>
+			            </div>
+			             <div class="action"><a href="" class="btn">立即购买</a></div>
+					</li>
+					<li class="product-panel">
+						<a href="" class="product-view">
+							<img src="image/product/p11.jpg" alt="">
+							<span class="tag-first">3件5折</span>
+						</a>
+						<h2 class="product-desc">
+				            <a class="product-link" href="" target="_blank" title="【官方正品】YSL圣罗兰莹亮纯魅丰盈黑心唇膏 莹亮星钻唇膏">	
+				            	【官方正品】YSL圣罗兰莹亮纯魅丰盈黑心唇膏 莹亮星钻唇膏
+				            </a>
+				        </h2>
+				        <div class="price-wrapper">
+				            <span class="price clearfix">
+					            <span class="discount-amount"></span>
+					            ￥199
+				            </span>
+				            <span class="old-price"></span>
+				            <br><span class="p-reference">参考价：$22</span>
+			            </div>
+			             <div class="action"><a href="" class="btn">立即购买</a></div>
+					</li>
+				</ul>
+	  		</div>
+		</div>
+    </div>
+	
+	<div class="to-head"><a href="#"></a></div>
+
+    <div class="footer clearfix">
+	    <div class="footer-inner clearfix">
+	        <div class="col site-infos">
+	            <a class="footer-logo-link" href="index.html">
+	                <img width="320" src="image/logo.png">
+	            </a>
+	            <p>中文客服：china@rainbowtime.com</p>
+	            <p>工作时间：9:00 - 18:00（北京时间），周末及节假日除外</p>
+	            <p>rainbowtime.com © 2005-2019. All rights reserved.</p>
+	        </div>
+	        <div class="col">
+	            <h6>关于我们</h6>
+	            <ul>
+	                <li><a href="" target="_blank">商户简介</a></li>
+	                <li><a href="" target="_blank">正品承诺</a></li>
+	                <li><a href="" target="_blank">服务条款</a></li>
+	                <li><a href="" target="_blank">隐私政策</a></li>
+	                <li><a href="" target="_blank">消费者告知书</a></li>
+	            </ul>
+	        </div>
+	        <div class="col">
+	            <h6>消费者指南</h6>
+	            <ul>
+	                <li><a href="" target="_blank">购物流程</a></li>
+	                <li><a href="" target="_blank">活动规则</a></li>
+	                <li><a href="" target="_blank">退货政策</a></li>
+	                <li><a href="" target="_blank">关于我们</a></li>
+	                <li><a href="" target="_blank">联系我们</a></li>
+	            </ul>
+	        </div>
+	        <div class="col">
+	            <h6>个人中心</h6>
+	            <ul>
+	                <li><a href="" target="_blank">我的账户</a></li>
+	                <li><a href="" target="_blank">我的订单</a></li>
+	                <li><a href="" target="_blank">收货地址</a></li>
+	                <li><a href="" target="_blank">我的优惠</a></li>
+	                <li><a href="" target="_blank">我的晒单</a></li>
+	            </ul>
+	        </div>
+	        <div class="col qrcodes">
+	            <h6>关注官方账号，获取更多福利</h6>
+	            <div class="img-cap first-elem">
+	                <img width="88" height="88" src="image/QRcode.png">
+	                <span>官方微信</span>
+	            </div>
+	            <div class="img-cap">
+	                <img width="88" height="88" src="image/QRcode.png">
+	                <span>官方微博</span>
+	            </div>
+	        </div>
+	    </div>
+	</div>
+</body>
+</html>

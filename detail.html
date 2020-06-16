@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>DETAIL / 商品详情</title>
+	<link rel="stylesheet" href="css/base.css">
+	<link rel="stylesheet" href="css/detail.css">
+	<link rel="stylesheet" href="css/index.css">
+	<script type="text/javascript" src="js/jquery-3.4.1.js"></script>
+	<script type="text/javascript" src="js/base.js"></script>
+	<script type="text/javascript" src="js/detail.js"></script>
+</head>
+<body>
+	<!-- 头部开始 -->
+	<div class="header">
+    	<div class="header-box">
+    		<!-- user区 -->
+    		<ul class="user">
+	            <li class="login">
+	                <a href="login.html" target="_blank">登录</a>
+	                <div class="login-menu unlogin-menu">
+	                    <ul>
+	                        <li class="menu-uc"><span class="menu-icon"> </span><a href="/member/my" target="_blank">个人中心</a></li>
+	                        <li class="menu-fav"><span class="menu-icon"> </span><a href="/member/favourites" target="_blank">我的收藏</a></li>
+	                    </ul>
+	                </div>
+	            </li>
+	            <li class="m-line">|</li>
+	            <li class="register">
+	                <a href="register.html" target="_blank">注册</a>
+	            </li>
+	        </ul>
+	        <!-- service区 -->
+	        <ul class="service">
+	            <li class="exchange">
+	                <a id="select_currency" href="">参考汇率</a>
+						<ul class="exchange-menu">
+							<li id="tb-wish" class="tb-wish">
+								<span>1英镑=9人民币</span>
+								<span class="rate-help-anchor"></span>
+							</li>
+							<li id="rate-help-content" class="rate-help-content">
+								<b class="rate-help">RainbowTime 统一以英镑作为货币单位，站内所有人民价格及汇率仅供参考；顾客实际支付的金额以结算时支付机构的实时汇率为准。</b>
+							</li>
+						</ul>
+	            </li>
+	            <li id="kefu" class="kefu">
+	                <a href="" class="online-kf">在线客服</a>
+	            </li>
+	            <li class="shopping-cart">
+	                <a href="" target="_blank">购物车</a>
+	            </li>
+	            <li class="notification">
+	                <a href="" target="_blank">消费者告知书</a>
+	            </li>
+	        </ul>
+    	</div>
+    </div>
+	<!-- 头部结束 -->
+	
+    <!-- logo和搜索框开始 -->
+    <div class="logo-and-search">
+	    <div class="logo-inner">
+	        <a href="index.html" class="logo">
+	            <img width="320" alt="" src="image/logo.png">
+	        </a>
+	        <form class="search-wrap search-focus">
+	            <div class="clearfix cmp-dropdownsearch">
+	                <input id="q" name="q" placeholder="YSL圣罗兰" data-value="YSL圣罗兰" class="search-bg input-keywords" type="text" autocomplete="off">
+	                <button type="button" class="btn-search" sel-id="header-btn-searchkw">搜索</button>
+	            </div>
+	        </form>
+	    </div>
+	</div>
+	<!-- logo和搜索框结束 -->
+
+	<!-- 导航栏开始 -->
+	<div class="nav">
+        <div class="nav-inner">
+            <ul class="primary">
+                <li class="home"><a href="index.html">INDEX/首页</a></li>
+                <li class="shop hover active"><a href="shop.html">SHOP/购物</a></li>
+                <li class="news"><a href="news.html">NEWS/新品速递</a></li>
+				<li class="sale"><a href="sale.html">SALE/优惠专区</a></li>
+				<li class="sharing"><a href="sharing.html">SHARING/美物分享</a></li>
+            </ul>
+        </div>
+    </div>
+    <!-- 导航栏结束 -->
+
+    <div class="main">
+  		<p>商品详情页 > 【官方正品】YSL圣罗兰莹亮纯魅丰盈黑心唇膏 莹亮星钻唇膏</p>
+		<div class="product-wrap">
+			<div style="position:relative">
+				<div id="product-img" class="product-img">
+			    	<img src="image/product/p01.jpg"></img>
+			    	<div id="mask-back" class="mask-back"></div>
+			    	<div id="mask" class="mask"></div>
+			    	<i class="icon-search"></i>
+			    </div>
+			    <div id="show-img" class="show-img">
+			    	<img id="show" class="show" src="image/product/p01.jpg"></img>
+			    </div>
+			</div>
+			<div class="product-info">
+				<h2 class="detail-title">【官方正品】YSL圣罗兰莹亮纯魅丰盈黑心唇膏 莹亮星钻唇膏</h2>
+				<div class="info-wrap" style="height:20px;border-bottom:1px dashed #ddd">
+					<div class="dt">售　　价</div>
+					<div class="dd"><b class="price">￥320</b> <span class="orig-price">￥500</span></div>
+				</div>
+				<div class="info-wrap">
+					<div class="dt">参&nbsp;考&nbsp;&nbsp;价</div>
+					<div class="dd"><span class="reference-price">$45</span></div>
+				</div>
+				<div class="info-wrap">
+					<div class="dt">促　　销</div>
+					<div class="dd"><span class="sale">2件93折</span></div>
+				</div>
+				<div class="info-wrap">
+					<div class="dt">活　　动</div>
+					<div class="dd act"><span>[商品满减]</span> 6.12-6.20每满500-50，所有商品有效  <a href="">立即凑单 ></a></div>
+				</div>
+				<div class="info-wrap">
+					<div class="dt">发　　货</div>
+					<div class="dd">美国直邮，发货后预计3-7天到手，暂不支持发往港澳台地区。</div>
+				</div>
+				<div class="info-wrap">
+					<div class="dt">数　　量</div>
+					<div class="dd">
+						<input type="button" value="＋" class="btn btn-add">
+						<input type="text" value="1" class="input-num">
+						<input type="button" value="－" class="btn btn-plus">
+					</div>
+				</div>
+				<div class="buy-and-fav clearfix">
+                    <button class="btn btn-buy">加入购物车</button>
+                    <button class="btn btn-fav"><i class="icon-fav"></i>收藏</button>
+                </div>
+			</div>
+		</div>
+		<div class="product-detail clearfix" style="padding:50px 0;">
+			<strong class="title" style="font-size:18px;padding:20px 0">商品详情</strong>
+			<div class="product-description clearfix">
+                <b><div class="d-title">产品介绍 <span class="d-sub"> PRODUCT INTRODUCTION</span></div></b>
+				<p class="d-list">YSL圣罗兰莹亮纯魅丰盈黑心唇膏，是一款采用磨砂设计理论创造出来的哑光效果唇膏，让你的嘴唇从内部看起来有发光效果，提亮唇色的同时令双唇更为饱满丰润。</p>
+				<p class="d-list">○　容量：3.5g</p>
+				<p class="d-list">○　品牌：Charlotte Tilbury</p>
+				<b><div class="d-title">产品特点 <span class="d-sub"> PRODUCT FEATURES</span></div></b>
+				<p class="d-list">○　顺滑质感，持久炫彩；</p>
+				<p class="d-list">○　贴心的多边形贴面，棱角分明，易于勾勒唇线，打造精美唇妆。</p>
+				<b><div class="d-title">功能概述 <span class="d-sub"> FUNCTIONAL OVERVIEW</span></div></b>
+				<p class="d-list">○　融合了特殊的蜡和巧妙的光散射颜料，可以令妆效无比持久；</p>
+				<p class="d-list">○　保护嘴唇免受天然氧化剂的侵害。</p>
+				<b><div class="d-title">主要成分 <span class="d-sub"> MAIN COMPONENTS</span></div></b>
+				<p class="d-list">○　胭脂树提取物</p>
+				<p class="d-list">○　兰花提取物</p>
+				<p class="d-list">○　二氧化硅</p>
+				<b><div class="d-title">适用人群 <span class="d-sub"> SUITABLE FOR</span></div></b>
+				<p class="d-list">○　适合所有皮肤类型。</p>
+				<b><div class="d-title">使用方法 <span class="d-sub"> HOW TO USE</span></div></b>
+				<p class="d-list">○　由内向外一点点涂抹均匀，可搭配唇线笔使用。</p>
+				<b><div class="d-title">注意事项 <span class="d-sub"> ATTENTION</span></div></b>
+				<p class="d-list">○　避免本产品直接触及眼睛，如进入眼内，请立即用清水冲洗。</p>
+				<p class="d-list">○　外用产品不可食用。</p>
+				<p class="d-list">○　请放在儿童无法触及的地方。</p>
+				<p class="d-list">○　如发现皮肤有任何不适请立即停止使用。</p>
+				<p class="d-list">○　使用后请盖紧瓶盖。</p>
+				<br><br>Create the illusion of fuller, wider lips with Matte Revolution – for lips that look lit from within. It’s a trick that Charlotte uses all the time on photo shoots, using lighting trickery, pigments and powders, and have been working for years to re-create this effect in the slick of 1 lipstick. Now everyone can create this full, matte lip effect in a long-lasting, buildable, hydrating formula – it’s the matte lipstick of the future! Exclusively enriched with Lipstick Tree extract which protects lips and is a natural anti-oxidant, and Orchid Extract which soothes and hydrates for a soft, buildable cashmere finish. Available in 10 modern-matte shades for all skin tones – 1 for each of the Charlotte's signature looks.<br><br><b>Ingredients:</b>Neopentyl Glycol Dicaprylate/dicaprate, Trimethylolpropane Triisostearate, Dimethicone, Cera Microcristallina/cire Microcristalline, Polyethylene, Polybutene, Dimethicone Crosspolymer, Silica, Dicalcium Phosphate, Ethyl Vanillin, Caprylic/capric Triglyceride, Tocopherol, Carthamus Tinctorius (safflower) Seed Oil, Zea Mays (corn) Oil, Pentaerythrityl Tetra-dl-t-butyl Hydroxyhydrocinnamate, Carica Papaya (papaya) Fruit Extract, Orchis Mascula Flower Extract, Bixa Orellana Seed Extract, Bht, Tocopheryl Acetate, Tin Oxide 
+			</div>
+		</div>
+		<div class="guess-like clearfix" style="padding:50px 0;">
+			<strong class="title" style="font-size:18px">猜你喜欢</strong>
+			<div class="guess-list clearfix">
+				<ul>
+					<li class="product-panel" style="clear:left">
+	    				<a href="" class="product-view">
+	    					<img src="image/product/p01.jpg" alt="">
+	    					<span class="tag-first">2件93折</span>
+	    				</a>
+	    				<h2 class="product-desc">
+				            <a class="product-link" href="" target="_blank" title="【官方正品】YSL圣罗兰莹亮纯魅丰盈黑心唇膏 莹亮星钻唇膏">	
+				            	【官方正品】YSL圣罗兰莹亮纯魅丰盈黑心唇膏 莹亮星钻唇膏
+				            </a>
+				        </h2>
+				        <div class="price-wrapper">
+				            <span class="price clearfix">
+					            <span class="discount-amount"></span>
+					            ￥199
+				            </span>
+				            <span class="old-price"></span>
+			            </div>
+			            <div class="stock-addr">美国仓</div>
+	    			</li>
+	    			<li class="product-panel">
+	    				<a href="" class="product-view">
+	    					<img src="image/product/p10.jpg" alt="">
+	    					<span class="tag-first"></span>
+	    				</a>
+	    				<h2 class="product-desc">
+				            <a class="product-link" href="" target="_blank" title="INTEGRATE资生堂完美意境保湿遮瑕气垫粉底液0#明亮色持久不脱妆">
+				            	INTEGRATE资生堂完美意境保湿遮瑕气垫粉底液0#明亮色持久不脱妆
+				            </a>
+				        </h2>
+				        <div class="price-wrapper">
+				            <span class="price clearfix">
+					            <span class="discount-amount">80%OFF</span>
+					            ￥149
+				            </span>
+				            <span class="old-price">￥199</span>
+			            </div>
+			            <div class="stock-addr">日本仓</div>
+	    			</li>
+	    			<li class="product-panel">
+	    				<a href="" class="product-view">
+	    					<img src="image/product/p05.jpg" alt="">
+	    					<span class="tag-first"></span>
+	    				</a>
+	    				<h2 class="product-desc">
+				            <a class="product-link" href="" target="_blank" title="美国Revlon露华浓进口粉底液持久无暇水润不脱色美白粉底110#150#">
+				            	美国Revlon露华浓进口粉底液持久无暇水润不脱色美白粉底110#150#
+				            </a>
+				        </h2>
+				        <div class="price-wrapper">
+				            <span class="price clearfix">
+					            <span class="discount-amount">80%OFF</span>
+					            ￥49
+				            </span>
+				            <span class="old-price">￥69</span>
+			            </div>
+			            <div class="stock-addr">美国仓</div>
+	    			</li>
+	    			<li class="product-panel">
+	    				<a href="" class="product-view">
+	    					<img src="image/product/p06.jpg" alt="">
+	    					<span class="tag-first"></span>
+	    				</a>
+	    				<h2 class="product-desc">
+				            <a class="product-link" href="" target="_blank" title="Embryolisse进口保湿隔离妆前乳法国大宝妆前打底隔离霜75ml">
+				            	Embryolisse进口保湿隔离妆前乳法国大宝妆前打底隔离霜75ml
+				            </a>
+				        </h2>
+				        <div class="price-wrapper">
+				            <span class="price clearfix">
+					            <span class="discount-amount">50%OFF</span>
+					            ￥59
+				            </span>
+				            <span class="old-price">￥129</span>
+			            </div>
+			            <div class="stock-addr">法国仓</div>
+	    			</li>
+	    			<li class="product-panel">
+	    				<a href="" class="product-view">
+	    					<img src="image/product/p07.jpg" alt="">
+	    					<span class="tag-first">买三免一</span>
+	    				</a>
+	    				<h2 class="product-desc">
+				            <a class="product-link" href="" target="_blank" title="美国RCMA无色透明定妆粉散粉蜜粉底胡椒粉持久定妆防水控油90ml">
+				            	美国RCMA无色透明定妆粉散粉蜜粉底胡椒粉持久定妆防水控油90ml
+				            </a>
+				        </h2>
+				        <div class="price-wrapper">
+				            <span class="price clearfix">
+					            <span class="discount-amount"></span>
+					            ￥99
+				            </span>
+				            <span class="old-price"></span>
+			            </div>
+			            <div class="stock-addr">美国仓</div>
+	    			</li>
+				</ul>
+			</div>
+		</div>
+    </div>
+
+	<div class="to-head"><a href="#"></a></div>
+	
+    <div class="footer clearfix">
+	    <div class="footer-inner clearfix">
+	        <div class="col site-infos">
+	            <a class="footer-logo-link" href="/">
+	                <img width="320" src="image/logo.png">
+	            </a>
+	            <p>中文客服：china@rainbowtime.com</p>
+	            <p>工作时间：9:00 - 18:00（北京时间），周末及节假日除外</p>
+	            <p>rainbowtime.com © 2005-2019. All rights reserved.</p>
+	        </div>
+	        <div class="col">
+	            <h6>关于我们</h6>
+	            <ul>
+	                <li><a href="" target="_blank">商户简介</a></li>
+	                <li><a href="" target="_blank">正品承诺</a></li>
+	                <li><a href="" target="_blank">服务条款</a></li>
+	                <li><a href="" target="_blank">隐私政策</a></li>
+	                <li><a href="" target="_blank">消费者告知书</a></li>
+	            </ul>
+	        </div>
+	        <div class="col">
+	            <h6>消费者指南</h6>
+	            <ul>
+	                <li><a href="" target="_blank">购物流程</a></li>
+	                <li><a href="" target="_blank">活动规则</a></li>
+	                <li><a href="" target="_blank">退货政策</a></li>
+	                <li><a href="" target="_blank">关于我们</a></li>
+	                <li><a href="" target="_blank">联系我们</a></li>
+	            </ul>
+	        </div>
+	        <div class="col">
+	            <h6>个人中心</h6>
+	            <ul>
+	                <li><a href="" target="_blank">我的账户</a></li>
+	                <li><a href="" target="_blank">我的订单</a></li>
+	                <li><a href="" target="_blank">收货地址</a></li>
+	                <li><a href="" target="_blank">我的优惠</a></li>
+	                <li><a href="" target="_blank">我的晒单</a></li>
+	            </ul>
+	        </div>
+	        <div class="col qrcodes">
+	            <h6>关注官方账号，获取更多福利</h6>
+	            <div class="img-cap first-elem">
+	                <img width="88" height="88" src="image/QRcode.png">
+	                <span>官方微信</span>
+	            </div>
+	            <div class="img-cap">
+	                <img width="88" height="88" src="image/QRcode.png">
+	                <span>官方微博</span>
+	            </div>
+	        </div>
+	    </div>
+	</div>
+</body>
+</html>

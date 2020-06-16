@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>SHARING / 美物分享</title>
+	<link rel="stylesheet" href="css/base.css">
+	<link rel="stylesheet" href="css/sharing.css">
+	<script type="text/javascript" src="js/jquery-3.4.1.js"></script>
+	<script type="text/javascript" src="js/base.js"></script>
+</head>
+<body>
+    <!-- 头部开始 -->
+    <div class="header">
+        <div class="header-box">
+            <!-- user区 -->
+            <ul class="user">
+                <li class="login">
+                    <a href="login.html" target="_blank">登录</a>
+                    <div class="login-menu unlogin-menu">
+                        <ul>
+                            <li class="menu-uc"><span class="menu-icon"> </span><a href="/member/my" target="_blank">个人中心</a></li>
+                            <li class="menu-fav"><span class="menu-icon"> </span><a href="/member/favourites" target="_blank">我的收藏</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="m-line">|</li>
+                <li class="register">
+                    <a href="register.html" target="_blank">注册</a>
+                </li>
+            </ul>
+            <!-- service区 -->
+            <ul class="service">
+                <li class="exchange">
+                    <a id="select_currency" href="">参考汇率</a>
+                        <ul class="exchange-menu">
+                            <li id="tb-wish" class="tb-wish">
+                                <span>1英镑=9人民币</span>
+                                <span class="rate-help-anchor"></span>
+                            </li>
+                            <li id="rate-help-content" class="rate-help-content">
+                                <b class="rate-help">RainbowTime 统一以英镑作为货币单位，站内所有人民价格及汇率仅供参考；顾客实际支付的金额以结算时支付机构的实时汇率为准。</b>
+                            </li>
+                        </ul>
+                </li>
+                <li id="kefu" class="kefu">
+                    <a href="" class="online-kf">在线客服</a>
+                </li>
+                <li class="shopping-cart">
+                    <a href="" target="_blank">购物车</a>
+                </li>
+                <li class="notification">
+                    <a href="" target="_blank">消费者告知书</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!-- 头部结束 -->
+    
+    <!-- logo和搜索框开始 -->
+    <div class="logo-and-search">
+        <div class="logo-inner">
+            <a href="index.html" class="logo">
+                <img width="320" alt="" src="image/logo.png">
+            </a>
+            <form class="search-wrap search-focus">
+                <div class="clearfix cmp-dropdownsearch">
+                    <input id="q" name="q" placeholder="YSL圣罗兰" data-value="YSL圣罗兰" class="search-bg input-keywords" type="text" autocomplete="off">
+                    <button type="button" class="btn-search" sel-id="header-btn-searchkw">搜索</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <!-- logo和搜索框结束 -->
+
+	<!-- 导航栏开始 -->
+	<div class="nav">
+        <div class="nav-inner">
+            <ul class="primary">
+                <li class="home"><a href="index.html">INDEX/首页</a></li>
+                <li class="shop"><a href="shop.html">SHOP/购物</a></li>
+                <li class="news"><a href="news.html">NEWS/新品速递</a></li>
+				<li class="sale"><a href="sale.html">SALE/优惠专区</a></li>
+				<li class="sharing hover active"><a href="sharing.html">SHARING/美物分享</a></li>
+            </ul>
+        </div>
+    </div>
+    <!-- 导航栏结束 -->
+
+    <div class="main">
+    	<div class="sharing-hot">
+			<div class="text-con">
+				<div class="user-info">
+					<a href=""><img src="image/userPic/u01.jpg" class="userPic"></a>
+					<div class="username"><a href="">绿欧欧</a></div>
+					<div class="follow"><a href="">关注</a></div>
+				</div>
+				<a href="">
+					<h2 class="title">Canmake | 舒芙蕾四色眼影盘我又心动了！</h2>
+					<div class="text">真的是温柔到飞起，粉棕色气质又百搭~四色为珠光却一点都不显眼肿，质地软软糯糯的hin好画，粉质细腻像舒芙蕾，02号盘日式玫瑰摩卡，温柔到哭，新手还等什么！冲鸭！！<br><br>真的是温柔到飞起，粉棕色气质又百搭~四色为珠光却一点都不显眼肿，质地软软糯糯的hin好画，粉质细腻像舒芙蕾，02号盘日式玫瑰摩卡，温柔到哭，新手还等什么！冲鸭！！<br><br>真的是温柔到飞起，粉棕色气质又百搭~四色为珠光却一点都不显眼肿，质地软软糯糯的hin好画，粉质细腻像舒芙蕾，02号盘日式玫瑰摩卡，温柔到哭，新手还等什么！冲鸭！！真的是温柔到飞起，粉棕色气质又百搭~四色为珠光却一点都不显眼肿，质地软软糯糯的hin好画，粉质细腻像舒芙蕾，02号盘日式玫瑰摩卡，温柔到哭，新手还等什么！冲鸭！！</div>
+				</a>
+				<div class="about"><span class="icon">#</span>眼影试色</div>
+				<div class="date">编辑于 05-19</div>
+			</div>
+    		<a href="">
+    			<div class="img-con">
+	    			<div class="major-img"><img src="image/sharing/s01.jpg"></div>
+		    		<div class="minor-img">
+		    			<li><img src="image/sharing/s01-1.jpg"></li>
+		    			<li><img src="image/sharing/s01-2.jpg"></li>
+		    		</div>
+	    		</div>
+    		</a>
+    	</div>
+    	<div class="sharing-list">
+    		<ul>
+    			<li class="sharing-panel">
+    				<a href="">
+    					<div class="img-box"><img src="image/sharing/s01.jpg" class="sharing-img"></div>
+    					<p class="title">Canmake | 舒芙蕾四色眼影盘我又心动了！</p>
+    					<div class="user-and-like">
+    						<div class="user-info"><img src="image/userPic/u01.jpg" class="userPic"><div class="username">绿欧欧</div></div>
+    						<div class="like"><div class="icon"></div><span>2446</span></div>
+    					</div>
+    				</a>
+    			</li>
+    			<li class="sharing-panel">
+    				<a href="">
+    					<div class="img-box"><img src="image/sharing/s02.jpg" class="sharing-img"></div>
+    					<p class="title">Armani | 阿玛尼绝版回归！甜辣橘棕太飒了！！百搭不挑皮，本夏天的灵魂</p>
+    					<div class="user-and-like">
+    						<div class="user-info"><img src="image/userPic/u02.jpg" class="userPic"><div class="username">Sia羊羊</div></div>
+    						<div class="like"><div class="icon"></div><span>2446</span></div>
+    					</div>
+    				</a>
+    			</li>
+    			<li class="sharing-panel">
+    				<a href="">
+    					<div class="img-box"><img src="image/sharing/s03.jpg" class="sharing-img"></div>
+    					<p class="title">Eiio | 这洗面奶把毛孔呼啦啦抹清透了！</p>
+    					<div class="user-and-like">
+    						<div class="user-info"><img src="image/userPic/u03.jpg" class="userPic"><div class="username">半山也</div></div>
+    						<div class="like"><div class="icon"></div><span>2446</span></div>
+    					</div>
+    				</a>
+    			</li>
+    			<li class="sharing-panel">
+    				<a href="">
+    					<div class="img-box"><img src="image/sharing/s04.jpg" class="sharing-img"></div>
+    					<p class="title">Mac | 应该是我用过最好的底妆三件套！！！</p>
+    					<div class="user-and-like">
+    						<div class="user-info"><img src="image/userPic/u01.jpg" class="userPic"><div class="username">Sia羊羊</div></div>
+    						<div class="like"><div class="icon"></div><span>2446</span></div>
+    					</div>
+    				</a>
+    			</li>
+    			<li class="sharing-panel">
+    				<a href="">
+    					<div class="img-box"><img src="image/sharing/s05.jpg" class="sharing-img"></div>
+    					<p class="title">Dior | 迪奥772~蜜桃豆沙~</p>
+    					<div class="user-and-like">
+    						<div class="user-info"><img src="image/userPic/u02.jpg" class="userPic"><div class="username">Sia羊羊</div></div>
+    						<div class="like"><div class="icon"></div><span>2446</span></div>
+    					</div>
+    				</a>
+    			</li>
+    			<li class="sharing-panel">
+    				<a href="">
+    					<div class="img-box"><img src="image/sharing/s06.jpg" class="sharing-img"></div>
+    					<p class="title">Embryolisse | 和起皮卡粉say byebye</p>
+    					<div class="user-and-like">
+    						<div class="user-info"><img src="image/userPic/u03.jpg" class="userPic"><div class="username">半山也</div></div>
+    						<div class="like"><div class="icon"></div><span>2446</span></div>
+    					</div>
+    				</a>
+    			</li>
+    		</ul>
+    		<ul>
+    			<li class="sharing-panel">
+    				<a href="">
+    					<div class="img-box"><img src="image/sharing/s06.jpg" class="sharing-img"></div>
+    					<p class="title">Embryolisse | 和起皮卡粉say byebye</p>
+    					<div class="user-and-like">
+    						<div class="user-info"><img src="image/userPic/u03.jpg" class="userPic"><div class="username">半山也</div></div>
+    						<div class="like"><div class="icon"></div><span>2446</span></div>
+    					</div>
+    				</a>
+    			</li>
+    			<li class="sharing-panel">
+    				<a href="">
+    					<div class="img-box"><img src="image/sharing/s05.jpg" class="sharing-img"></div>
+    					<p class="title">Dior | 迪奥772~蜜桃豆沙~</p>
+    					<div class="user-and-like">
+    						<div class="user-info"><img src="image/userPic/u02.jpg" class="userPic"><div class="username">Sia羊羊</div></div>
+    						<div class="like"><div class="icon"></div><span>2446</span></div>
+    					</div>
+    				</a>
+    			</li>
+    			<li class="sharing-panel">
+    				<a href="">
+    					<div class="img-box"><img src="image/sharing/s03.jpg" class="sharing-img"></div>
+    					<p class="title">Eiio | 这洗面奶把毛孔呼啦啦抹清透了！</p>
+    					<div class="user-and-like">
+    						<div class="user-info"><img src="image/userPic/u03.jpg" class="userPic"><div class="username">半山也</div></div>
+    						<div class="like"><div class="icon"></div><span>2446</span></div>
+    					</div>
+    				</a>
+    			</li>
+    			<li class="sharing-panel">
+    				<a href="">
+    					<div class="img-box"><img src="image/sharing/s02.jpg" class="sharing-img"></div>
+    					<p class="title">Armani | 阿玛尼绝版回归！甜辣橘棕太飒了！！百搭不挑皮，本夏天的灵魂</p>
+    					<div class="user-and-like">
+    						<div class="user-info"><img src="image/userPic/u02.jpg" class="userPic"><div class="username">Sia羊羊</div></div>
+    						<div class="like"><div class="icon"></div><span>2446</span></div>
+    					</div>
+    				</a>
+    			</li>
+    			<li class="sharing-panel">
+    				<a href="">
+    					<div class="img-box"><img src="image/sharing/s01.jpg" class="sharing-img"></div>
+    					<p class="title">Canmake | 舒芙蕾四色眼影盘我又心动了！</p>
+    					<div class="user-and-like">
+    						<div class="user-info"><img src="image/userPic/u01.jpg" class="userPic"><div class="username">绿欧欧</div></div>
+    						<div class="like"><div class="icon"></div><span>2446</span></div>
+    					</div>
+    				</a>
+    			</li>
+    			<li class="sharing-panel">
+    				<a href="">
+    					<div class="img-box"><img src="image/sharing/s04.jpg" class="sharing-img"></div>
+    					<p class="title">Mac | 应该是我用过最好的底妆三件套！！！</p>
+    					<div class="user-and-like">
+    						<div class="user-info"><img src="image/userPic/u01.jpg" class="userPic"><div class="username">Sia羊羊</div></div>
+    						<div class="like"><div class="icon"></div><span>2446</span></div>
+    					</div>
+    				</a>
+    			</li>
+    		</ul>
+    		<ul>
+    			<li class="sharing-panel">
+    				<a href="">
+    					<div class="img-box"><img src="image/sharing/s05.jpg" class="sharing-img"></div>
+    					<p class="title">Dior | 迪奥772~蜜桃豆沙~</p>
+    					<div class="user-and-like">
+    						<div class="user-info"><img src="image/userPic/u02.jpg" class="userPic"><div class="username">Sia羊羊</div></div>
+    						<div class="like"><div class="icon"></div><span>2446</span></div>
+    					</div>
+    				</a>
+    			</li>
+    			<li class="sharing-panel">
+    				<a href="">
+    					<div class="img-box"><img src="image/sharing/s06.jpg" class="sharing-img"></div>
+    					<p class="title">Embryolisse | 和起皮卡粉say byebye</p>
+    					<div class="user-and-like">
+    						<div class="user-info"><img src="image/userPic/u03.jpg" class="userPic"><div class="username">半山也</div></div>
+    						<div class="like"><div class="icon"></div><span>2446</span></div>
+    					</div>
+    				</a>
+    			</li>
+    			<li class="sharing-panel">
+    				<a href="">
+    					<div class="img-box"><img src="image/sharing/s01.jpg" class="sharing-img"></div>
+    					<p class="title">Canmake | 舒芙蕾四色眼影盘我又心动了！</p>
+    					<div class="user-and-like">
+    						<div class="user-info"><img src="image/userPic/u01.jpg" class="userPic"><div class="username">绿欧欧</div></div>
+    						<div class="like"><div class="icon"></div><span>2446</span></div>
+    					</div>
+    				</a>
+    			</li>
+    			<li class="sharing-panel">
+    				<a href="">
+    					<div class="img-box"><img src="image/sharing/s04.jpg" class="sharing-img"></div>
+    					<p class="title">Mac | 应该是我用过最好的底妆三件套！！！</p>
+    					<div class="user-and-like">
+    						<div class="user-info"><img src="image/userPic/u01.jpg" class="userPic"><div class="username">Sia羊羊</div></div>
+    						<div class="like"><div class="icon"></div><span>2446</span></div>
+    					</div>
+    				</a>
+    			</li>
+    			<li class="sharing-panel">
+    				<a href="">
+    					<div class="img-box"><img src="image/sharing/s02.jpg" class="sharing-img"></div>
+    					<p class="title">Armani | 阿玛尼绝版回归！甜辣橘棕太飒了！！百搭不挑皮，本夏天的灵魂</p>
+    					<div class="user-and-like">
+    						<div class="user-info"><img src="image/userPic/u02.jpg" class="userPic"><div class="username">Sia羊羊</div></div>
+    						<div class="like"><div class="icon"></div><span>2446</span></div>
+    					</div>
+    				</a>
+    			</li>
+    			<li class="sharing-panel">
+    				<a href="">
+    					<div class="img-box"><img src="image/sharing/s03.jpg" class="sharing-img"></div>
+    					<p class="title">Eiio | 这洗面奶把毛孔呼啦啦抹清透了！</p>
+    					<div class="user-and-like">
+    						<div class="user-info"><img src="image/userPic/u03.jpg" class="userPic"><div class="username">半山也</div></div>
+    						<div class="like"><div class="icon"></div><span>2446</span></div>
+    					</div>
+    				</a>
+    			</li>
+    		</ul>
+    		<ul>
+    			<li class="sharing-panel">
+    				<a href="">
+    					<div class="img-box"><img src="image/sharing/s02.jpg" class="sharing-img"></div>
+    					<p class="title">Armani | 阿玛尼绝版回归！甜辣橘棕太飒了！！百搭不挑皮，本夏天的灵魂</p>
+    					<div class="user-and-like">
+    						<div class="user-info"><img src="image/userPic/u02.jpg" class="userPic"><div class="username">Sia羊羊</div></div>
+    						<div class="like"><div class="icon"></div><span>2446</span></div>
+    					</div>
+    				</a>
+    			</li>
+    			<li class="sharing-panel">
+    				<a href="">
+    					<div class="img-box"><img src="image/sharing/s03.jpg" class="sharing-img"></div>
+    					<p class="title">Eiio | 这洗面奶把毛孔呼啦啦抹清透了！</p>
+    					<div class="user-and-like">
+    						<div class="user-info"><img src="image/userPic/u03.jpg" class="userPic"><div class="username">半山也</div></div>
+    						<div class="like"><div class="icon"></div><span>2446</span></div>
+    					</div>
+    				</a>
+    			</li>
+    			<li class="sharing-panel">
+    				<a href="">
+    					<div class="img-box"><img src="image/sharing/s06.jpg" class="sharing-img"></div>
+    					<p class="title">Embryolisse | 和起皮卡粉say byebye</p>
+    					<div class="user-and-like">
+    						<div class="user-info"><img src="image/userPic/u03.jpg" class="userPic"><div class="username">半山也</div></div>
+    						<div class="like"><div class="icon"></div><span>2446</span></div>
+    					</div>
+    				</a>
+    			</li>
+    			<li class="sharing-panel">
+    				<a href="">
+    					<div class="img-box"><img src="image/sharing/s01.jpg" class="sharing-img"></div>
+    					<p class="title">Canmake | 舒芙蕾四色眼影盘我又心动了！</p>
+    					<div class="user-and-like">
+    						<div class="user-info"><img src="image/userPic/u01.jpg" class="userPic"><div class="username">绿欧欧</div></div>
+    						<div class="like"><div class="icon"></div><span>2446</span></div>
+    					</div>
+    				</a>
+    			</li>
+    			<li class="sharing-panel">
+    				<a href="">
+    					<div class="img-box"><img src="image/sharing/s05.jpg" class="sharing-img"></div>
+    					<p class="title">Dior | 迪奥772~蜜桃豆沙~</p>
+    					<div class="user-and-like">
+    						<div class="user-info"><img src="image/userPic/u02.jpg" class="userPic"><div class="username">Sia羊羊</div></div>
+    						<div class="like"><div class="icon"></div><span>2446</span></div>
+    					</div>
+    				</a>
+    			</li>
+    			<li class="sharing-panel">
+    				<a href="">
+    					<div class="img-box"><img src="image/sharing/s04.jpg" class="sharing-img"></div>
+    					<p class="title">Mac | 应该是我用过最好的底妆三件套！！！</p>
+    					<div class="user-and-like">
+    						<div class="user-info"><img src="image/userPic/u01.jpg" class="userPic"><div class="username">Sia羊羊</div></div>
+    						<div class="like"><div class="icon"></div><span>2446</span></div>
+    					</div>
+    				</a>
+    			</li>
+    		</ul>
+    	</div>
+    	<div class="page-con">
+			<ul>
+				<li class="page prev-page">上一页</li>
+				<li class="page active">1</li>
+				<li class="page">2</li>
+				<li class="page">3</li>
+				<li class="page">...</li>
+				<li class="page">444</li>
+				<li class="page next-page">下一页</li>
+			</ul>
+		</div>
+    </div>
+
+	<div class="to-head"><a href="#"></a></div>
+	
+    <div class="footer clearfix">
+	    <div class="footer-inner clearfix">
+	        <div class="col site-infos">
+	            <a class="footer-logo-link" href="index.html">
+	                <img width="320" src="image/logo.png">
+	            </a>
+	            <p>中文客服：china@rainbowtime.com</p>
+	            <p>工作时间：9:00 - 18:00（北京时间），周末及节假日除外</p>
+	            <p>rainbowtime.com © 2005-2019. All rights reserved.</p>
+	        </div>
+	        <div class="col">
+	            <h6>关于我们</h6>
+	            <ul>
+	                <li><a href="" target="_blank">商户简介</a></li>
+	                <li><a href="" target="_blank">正品承诺</a></li>
+	                <li><a href="" target="_blank">服务条款</a></li>
+	                <li><a href="" target="_blank">隐私政策</a></li>
+	                <li><a href="" target="_blank">消费者告知书</a></li>
+	            </ul>
+	        </div>
+	        <div class="col">
+	            <h6>消费者指南</h6>
+	            <ul>
+	                <li><a href="" target="_blank">购物流程</a></li>
+	                <li><a href="" target="_blank">活动规则</a></li>
+	                <li><a href="" target="_blank">退货政策</a></li>
+	                <li><a href="" target="_blank">关于我们</a></li>
+	                <li><a href="" target="_blank">联系我们</a></li>
+	            </ul>
+	        </div>
+	        <div class="col">
+	            <h6>个人中心</h6>
+	            <ul>
+	                <li><a href="" target="_blank">我的账户</a></li>
+	                <li><a href="" target="_blank">我的订单</a></li>
+	                <li><a href="" target="_blank">收货地址</a></li>
+	                <li><a href="" target="_blank">我的优惠</a></li>
+	                <li><a href="" target="_blank">我的晒单</a></li>
+	            </ul>
+	        </div>
+	        <div class="col qrcodes">
+	            <h6>关注官方账号，获取更多福利</h6>
+	            <div class="img-cap first-elem">
+	                <img width="88" height="88" src="image/QRcode.png">
+	                <span>官方微信</span>
+	            </div>
+	            <div class="img-cap">
+	                <img width="88" height="88" src="image/QRcode.png">
+	                <span>官方微博</span>
+	            </div>
+	        </div>
+	    </div>
+	</div>
+</body>
+</html>
